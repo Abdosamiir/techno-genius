@@ -14,5 +14,33 @@ body {
 }
 
 .photo {
-  width: 500px;
+  width: 200px;
+}
+/* 
+table tr td {
+  text-align: end;
+} */
+
+.row-data {
+  text-align: center;
+}
+
+.parag {
+  color: red;
+}
+
+.parag1 {
+  color: blue;
+}
+
+.parag2 {
+  color: yellow;
+}
+
+.span {
+  color: green;
+}
+
+#span {
+  color: aqua;
 }
