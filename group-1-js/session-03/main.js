@@ -1,28 +1,28 @@
 //////Array
 
-// const arr = ["abdo", "hamza", "mohamed", "haya", "berry"];
+const arr = ["abdo", "hamza", "mohamed", "haya", "berry"];
 
-// console.log(arr[2]);
+console.log(arr[2]);
 
-// arr.push("hasan"); //add from last
+arr.push("hasan"); //add from last
 
-// console.log(arr);
+console.log(arr);
 
-// arr.pop(); // revome from last
+arr.pop(); // revome from last
 
-// console.log(arr);
+console.log(arr);
 
-// arr.unshift("hana"); //add from beging
+arr.unshift("hana"); //add from beging
 
-// console.log(arr);
+console.log(arr);
 
-// arr.shift(); //remove from begin
+arr.shift(); //remove from begin
 
-// console.log(arr);
+console.log(arr);
 
-// console.log(arr.indexOf("abdo"));
-// console.log(arr.includes("abdo")); // true
-// console.log(arr.includes("abdoooo")); //fasle
+console.log(arr.indexOf("abdo"));
+console.log(arr.includes("abdo")); // true
+console.log(arr.includes("abdoooo")); //fasle
 
 //////object
 

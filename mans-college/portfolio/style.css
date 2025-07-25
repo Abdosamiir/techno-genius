@@ -1,0 +1,61 @@
+:root {
+  --background-color: #ccc;
+  --padding: 20px;
+  --margin: 6px;
+}
+.page {
+  padding-inline: var(--padding);
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  background-color: var(--background-color);
+  padding: 15px;
+  margin: var(--margin);
+}
+.header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 0 10px;
+  margin: var(--margin);
+  flex-grow: 1;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .content,
+.main .aside {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  height: 400px;
+  width: calc(100% / 5);
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  margin: var(--margin);
+}

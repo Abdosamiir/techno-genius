@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="username">user name</label>
+        <br />
+        <input
+          type="text"
+          name="user-name"
+          id="username"
+          required
+          autofocus
+          placeholder="Enter your name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="pass">password</label><br />
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          required
+          placeholder="Enter your password"
+          minlength="5"
+          maxlength="10"
+        />
+      </div>
+      <br />
+      <div>
+        <input type="color" name="color" />
+      </div>
+      <br />
+      <div>
+        <input type="range" name="range" value="50" min="0" max="100" />
+      </div>
+      <br />
+      <input type="submit" name="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
