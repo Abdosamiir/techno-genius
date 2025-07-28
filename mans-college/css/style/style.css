@@ -1,0 +1,40 @@
+/* this is my frist style */
+body {
+  background-color: #ccc;
+}
+
+.heading {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  color: blue;
+  border: 2px solid red;
+  border-style: dashed;
+  border-radius: 30px;
+  /* background-color: brown; */
+}
+
+.photo {
+  width: 200px;
+  margin-top: 20px;
+  padding-left: 70px;
+  border-radius: 50%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.parag {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #1e90ff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 5px;
+}

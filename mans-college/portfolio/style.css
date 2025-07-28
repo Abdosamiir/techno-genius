@@ -59,3 +59,7 @@ ul li {
   padding: var(--padding);
   margin: var(--margin);
 }
+
+.heading {
+  color: cadetblue;
+}

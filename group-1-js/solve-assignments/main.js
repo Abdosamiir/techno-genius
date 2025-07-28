@@ -293,3 +293,35 @@ function sayHello(theName, theGender) {
 // Needed Output
 sayHello("abod", "Male");
 sayHello("haya", "Female");
+
+// Create Your Object Here
+const member = {
+  name: "Elzero",
+  age: 38,
+  country: "egypt",
+  fullDetails: function () {
+    return `my name is ${this.name} my age is ${this.age} i live in ${this.country}`;
+  },
+};
+
+console.log(member.name); // Elzero
+console.log(member.age); // 38
+console.log(member.country); // Egypt
+console.log(member.fullDetails());
+// My Name Is Elzero, My Age Is 38, I Live in Egypt
+
+const obj = {};
+
+const obj2 = new Object({
+  name: "Elzero",
+  age: 38,
+  country: "egypt",
+  fullDetails: function () {
+    return `my name is ${this.name} my age is ${this.age} i live in ${this.country}`;
+  },
+});
+
+console.log(obj2);
+
+const arr = [];
+// const arr2 = new Array();
