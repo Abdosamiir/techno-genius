@@ -1,0 +1,24 @@
+/* this is a comment */
+body {
+  background-color: #ccc;
+}
+
+.text {
+  color: red;
+  /* background-color: aqua; */
+  border: 2px solid blue;
+  /* border-width: 2px;
+  border-sides: solid;
+  border-color: blue; */
+  border-radius: 20px;
+}
+
+.parag {
+  color: red;
+  border: 2px solid darkblue;
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+}

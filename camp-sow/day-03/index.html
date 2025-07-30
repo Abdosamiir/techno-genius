@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* h1 {
+            color: blue;
+            } */
+
+      #text {
+        color: #8a2be2;
+      }
+      .hamada {
+        color: darkblue !important; /* higher priority*/
+      }
+    </style>
+    <!--best practice extrnal css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- inline style /high priority  -->
+    <!-- <h1 style="color: red">welcome</h1> -->
+
+    <!-- internal style  -->
+    <!-- <h1 class="hamada" id="text" style="color: aqua;">welcome from internal</h1> -->
+    <!-- <h1 id="text">text</h1> -->
+
+    <h2 class="text">welcome from external</h2>
+    <p class="parag">Lorem ipsum dolor sit.</p>
+  </body>
+</html>
