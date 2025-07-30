@@ -52,14 +52,26 @@
 
       <div>
         <label for="num">enter your number </label>
-        <input type="number" min="1" max="50" id="num" />
+        <input type="number" name="number" min="1" max="100" id="num" />
       </div>
       <br />
       <div>
-        <input type="range" name="range" value="50" min="0" max="100" />
+        <label for="search">search </label>
+        <input type="search" name="search" id="search" />
       </div>
       <br />
       <div>
+        <label for="date">date </label>
+        <input type="date" name="date" id="date" required />
+      </div>
+
+      <br />
+      <div>
+        <input type="range" name="range" value="50" min="100" max="400" />
+      </div>
+      <br />
+      <div>
+        <!-- id is uniqe (not-repeated) -->
         <input type="checkbox" value="html" id="html" checked />
         <label for="html">html</label>
         <br />
@@ -79,12 +91,34 @@
         <label for="javascript">JavaScript</label>
       </div>
       <br />
+
+      <div>
+        <label for="cars">pick a car</label>
+        <select name="cars" id="cars" multiple>
+          <option value="BM">BM</option>
+          <option value="mercedes" selected>mercedes</option>
+          <option value="WV">WV</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="messege">Enter a massege</label>
+        <br />
+        <textarea
+          name="messege"
+          id="messege"
+          placeholder="Enter a messge "
+          rows="15"
+          cols="100"
+        ></textarea>
+      </div>
+      <br />
       <div>
         <input type="submit" name="submit" />
         <input type="reset" name="reset" />
         <input
           type="button"
-          onclick="alert('Hello World!')"
+          onclick="alert('please to choose multiple cars press ctrl + select')"
           value="Click Me!"
         />
       </div>
