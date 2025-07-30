@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="user">username</label>
+        <input
+          type="text"
+          id="user"
+          autofocus
+          required
+          placeholder="enter your name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="">email</label>
+        <input type="email" placeholder="enter your email" />
+      </div>
+      <br />
+      <div>
+        <label for="">pass</label>
+        <input
+          type="password"
+          required
+          minlength="5"
+          maxlength="10"
+          placeholder="enter your pass"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <input type="checkbox" id="pen" checked required />
+        <label for="pen">i have a pen</label>
+        <br />
+        <input type="checkbox" id="paper" value="paper" required />
+        <label for="paper">i have a paper</label>
+        <br />
+      </div>
+      <br />
+      <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+
+      <br />
+      <div>
+        <input type="radio" id="html" value="html" name="lang" checked />
+        <label for="html">html</label><br />
+        <input type="radio" id="css" name="lang" />
+        <label for="css">css</label><br />
+        <input type="radio" id="js" name="lang" />
+        <label for="js">js</label>
+      </div>
+      <br />
+      <div>
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>

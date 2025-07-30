@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="user">username</label>
+        <input
+          type="text"
+          id="user"
+          name="user"
+          autofocus
+          placeholder="Enter your name "
+          required
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          id="email"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="pass">password</label>
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="Enter your password"
+          required
+          minlength="5"
+          maxlength="10"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="color">pick your color : </label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <br />
+
+      <div>
+        <label for="num">enter your number </label>
+        <input type="number" min="1" max="50" id="num" />
+      </div>
+      <br />
+      <div>
+        <input type="range" name="range" value="50" min="0" max="100" />
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" value="html" id="html" checked />
+        <label for="html">html</label>
+        <br />
+        <input type="checkbox" value="css" id="css" />
+        <label for="css">css</label>
+        <br />
+        <input type="checkbox" value="js" id="js" />
+        <label for="js">js</label>
+      </div>
+      <br />
+      <div>
+        <input type="radio" id="x" name="fav" value="HTML" />
+        <label for="x">HTML</label><br />
+        <input type="radio" id="y" name="fav" value="CSS" />
+        <label for="y">CSS</label><br />
+        <input type="radio" id="javascript" name="fav" value="JavaScript" />
+        <label for="javascript">JavaScript</label>
+      </div>
+      <br />
+      <div>
+        <input type="submit" name="submit" />
+        <input type="reset" name="reset" />
+        <input
+          type="button"
+          onclick="alert('Hello World!')"
+          value="Click Me!"
+        />
+      </div>
+    </form>
+  </body>
+</html>
