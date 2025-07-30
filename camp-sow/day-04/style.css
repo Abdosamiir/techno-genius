@@ -1,0 +1,156 @@
+body {
+  background-color: #ccc;
+}
+
+.text {
+  color: red;
+  border: 2px double darkslategray; /* shorthand */
+  /* border-width: 2px ;
+  border-style: dooted;
+  border-color: darkblue; */
+  padding: 50px;
+  text-align: center;
+  margin: 15px auto;
+  /* outline: 2px solid blue; */
+  width: 80%;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  letter-spacing: 18px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  /* text-shadow: 2px 5px rgba(255, 0, 0, 0.4); */
+  background-color: black;
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+.techno {
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 3px solid darkslategray;
+  border-radius: 20px;
+}
+
+/* with flex */
+.parent {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid;
+  position: relative;
+}
+/* .top {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.child1,
+.child2,
+.child3,
+.child4 {
+  width: 30px;
+  height: 30px;
+  border: 3px solid darkslategray;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+}
+
+/* with position */
+
+.child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.child2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.child3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.child4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.parag {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: lowercase;
+  letter-spacing: 10px;
+  text-shadow: -20px -10px rgb(0, 0, 255, 0.3);
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: oblique;
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+.flex-box {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  padding: 5px;
+  border: 3px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.child5,
+.child6,
+.child7,
+.child8 {
+  width: 30px;
+  height: 30px;
+  border: 3px solid darkslategray;
+  text-align: center;
+  line-height: 30px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*
+بريهان
+هايا 
+جنه محمود
+رودينا احمد
+مريم عبدالله 
+ايمان نظمي 
+شهد تامر 
+نور احمد
+منه احمد تامر
+هنا تامر 
+ايمان تامر 
+جنه تامر
+جومانا مسعد 
+جني مسعد
+صفاء رضا 
+اسراء عطيه 
+*/
