@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="../final-project/index.html">
+      <h1>log in</h1>
+      <div class="block">
+        <label for="user">username</label>
+        <input
+          type="text"
+          id="user"
+          placeholder="Enter your name"
+          required
+          name="user"
+        />
+      </div>
+
+      <div class="block">
+        <label for="pass">password</label>
+        <input
+          type="password"
+          placeholder="Enter your password "
+          id="pass"
+          name="pass"
+          required
+          minlength="5"
+          maxlength="10"
+        />
+      </div>
+
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
