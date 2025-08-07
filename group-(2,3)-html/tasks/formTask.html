@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgba(0, 139, 88, 0.54);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    "
+  >
+    <form action="">
+      <div>
+        <label for="user">username</label><br />
+        <input
+          type="text"
+          id="user"
+          name="user"
+          required
+          placeholder="Enter your name"
+        />
+      </div>
+      <hr />
+      <br />
+      <div>
+        <label for="">password</label><br />
+        <input
+          type="password"
+          name="pass"
+          required
+          placeholder="Enter your password"
+        />
+      </div>
+      <hr />
+      <br />
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+      <hr />
+      <br />
+      <div>
+        <label for="">subject</label><br />
+        <input type="text" disabled />
+      </div>
+      <hr />
+
+      <div>
+        <input type="range" value="500" min="100" max="500" />
+      </div>
+
+      <div>
+        <input type="submit" value="send data" />
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>

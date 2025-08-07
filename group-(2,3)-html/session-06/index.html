@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        background: linear-gradient(to top left, blue, red);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .text {
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        text-transform: uppercase;
+        font-size: large;
+      }
+      form {
+        border: 2px solid white;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      label {
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <!-- global atrr  -->
+    <p class="text">the end of html.</p>
+
+    <form action="">
+      <div>
+        <input type="date" />
+      </div>
+
+      <br />
+      <div>
+        <input type="month" />
+      </div>
+      <br />
+      <div>
+        <input type="week" />
+      </div>
+
+      <br />
+      <div>
+        <label for="url">put your url</label>
+        <input type="url" />
+      </div>
+
+      <br />
+      <div>
+        <input type="time" />
+      </div>
+      <br />
+
+      <div>
+        <label for="">pick your fav car</label>
+        <input list="cars" name="" id="" />
+        <datalist id="cars">
+          <option value="bm"></option>
+          <option value="wv"></option>
+          <option value="mercedes"></option>
+          <option value="audi"></option>
+          <option value="toyota"></option>
+          <option value="kia"></option>
+          <option value="fiat"></option>
+        </datalist>
+      </div>
+    </form>
+    <iframe
+      src="https://youtube.com/"
+      frameborder="0"
+      width="100%"
+      height="50%"
+    ></iframe>
+  </body>
+</html>

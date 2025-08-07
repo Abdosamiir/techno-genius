@@ -11,57 +11,82 @@
         <label for="user">username</label>
         <input
           type="text"
+          placeholder="Enter your name"
           id="user"
+          name="username"
+          readonly
           autofocus
+          disabled
+          value="abdo"
           required
-          placeholder="enter your name"
         />
       </div>
       <br />
       <div>
-        <label for="">email</label>
-        <input type="email" placeholder="enter your email" />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          id="email"
+          name="email"
+          required
+        />
       </div>
       <br />
       <div>
-        <label for="">pass</label>
+        <label for="pass">password</label>
         <input
           type="password"
-          required
+          placeholder="Enter your password"
+          id="pass"
+          name="password"
           minlength="5"
           maxlength="10"
-          placeholder="enter your pass"
+          required
         />
       </div>
-
       <br />
 
       <div>
-        <input type="checkbox" id="pen" checked required />
-        <label for="pen">i have a pen</label>
-        <br />
-        <input type="checkbox" id="paper" value="paper" required />
-        <label for="paper">i have a paper</label>
-        <br />
+        <label for="color">pick your color</label>
+        <input type="color" id="color" name="color" />
+      </div>
+      <br />
+
+      <div>
+        <label for="num">pick your number</label>
+        <input type="number" id="num" name="number" min="1" max="50" />
       </div>
       <br />
       <div>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" />
+        <!-- <label for="num">pick your </label> -->
+        <input type="range" name="range" value="50" min="0" max="100" />
       </div>
-
       <br />
       <div>
-        <input type="radio" id="html" value="html" name="lang" checked />
-        <label for="html">html</label><br />
-        <input type="radio" id="css" name="lang" />
-        <label for="css">css</label><br />
-        <input type="radio" id="js" name="lang" />
+        <!-- id is uniqe (not-repeated) -->
+        <input type="checkbox" value="html" id="html" checked />
+        <label for="html">html</label>
+        <br />
+        <input type="checkbox" value="css" id="css" />
+        <label for="css">css</label>
+        <br />
+        <input type="checkbox" value="js" id="js" />
         <label for="js">js</label>
       </div>
       <br />
       <div>
-        <input type="submit" />
+        <input type="radio" id="x" name="fav" value="HTML" />
+        <label for="x">HTML</label><br />
+        <input type="radio" id="y" name="fav" value="CSS" />
+        <label for="y">CSS</label><br />
+        <input type="radio" id="javascript" name="fav" value="JavaScript" />
+        <label for="javascript">JavaScript</label>
+      </div>
+      <br />
+
+      <div>
+        <input type="submit" name="submit" value="log in" />
         <input type="reset" />
       </div>
     </form>
