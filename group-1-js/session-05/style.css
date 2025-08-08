@@ -1,0 +1,37 @@
+p:first-child {
+  background-color: red;
+}
+
+img {
+  width: 200px;
+  /* height: 200px; */
+  /* border-radius: 50%; */
+  border: 2px solid blue;
+  /* outline: 10px solid red; */
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ccc;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
