@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <style>
+      h1 {
+        color: red;
+      }
+
+      #text {
+        color: brown;
+      }
+      .title {
+        color: blue;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background: linear-gradient(to top left, darkblue, beige);
+      }
+
+      form {
+        /* display: flex; */
+        border: 2px solid #fff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(226, 43, 195, 0.3),
+          0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- output is #e22bc3 -->
+    <h1 class="title" id="text" style="color: white">welcome</h1>
+    <!-- <h1>hello</h1> -->
+
+    <form action="">
+      <div>
+        <label for="date">pick your date</label>
+        <input type="date" id="date" />
+      </div>
+      <br />
+      <div>
+        <label for="month">pick your month</label>
+        <input type="month" id="month" />
+      </div>
+      <br />
+      <div>
+        <label for="week">pick your week</label>
+        <input type="week" id="week" />
+      </div>
+      <br />
+
+      <div>
+        <label for="url">put your url</label>
+        <input type="url" id="url" />
+      </div>
+
+      <br />
+      <div>
+        <label for="time">pick time</label>
+        <input type="time" id="time" />
+      </div>
+
+      <br />
+      <div>
+        <label for="">pick your fav car</label>
+        <input list="cars" placeholder="pick your fav car" />
+        <datalist id="cars">
+          <option value="marcedes"></option>
+          <option value="wv"></option>
+          <option value="audi"></option>
+          <option value="fiat"></option>
+          <option value="kia"></option>
+          <option value="toyota"></option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
