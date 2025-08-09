@@ -35,3 +35,88 @@ nav ul {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+/* ========== ANIMATION SAMPLES ========== */
+
+/* 1. BOUNCE ANIMATION - Applied to Logo */
+.logo {
+  animation: bounce 2s infinite;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 2. FADE IN & SCALE ANIMATION - Applied to Images */
+.imgs img {
+  animation: fadeInScale 1s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.imgs img:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.imgs img:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.imgs img:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.imgs img:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 3. SLIDE IN ANIMATION - Applied to Navigation Items */
+nav ul li {
+  animation: slideIn 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+nav ul li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+nav ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+nav ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+nav ul li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

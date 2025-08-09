@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG IN FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>LOG IN</h1>
+    <form action="portfolio.html">
+      <div>
+        <label for="user">user name</label><br />
+        <input
+          type="text"
+          id="user"
+          placeholder="Enter your name"
+          required
+          name="user"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">password </label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter your password"
+          min="5"
+          max="10"
+        />
+      </div>
+      <br />
+
+      <div>
+        <input type="submit" value="login" />
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
