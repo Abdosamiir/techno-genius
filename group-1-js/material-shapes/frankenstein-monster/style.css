@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #459444; /* More accurate green background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monster {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Head section */
+.head {
+  position: relative;
+  width: 350px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hair/Hat */
+.hair {
+  width: 350px;
+  height: 70px;
+  background-color: #212234; /* More accurate dark blue/black for the hair */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Face */
+.face {
+  width: 350px;
+  height: 150px;
+  background-color: #00f676; /* More accurate bright green for the face */
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+/* Eyes container */
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  width: 180px;
+  margin-top: 10px;
+}
+
+/* Individual eye */
+.eye {
+  width: 60px;
+  height: 60px;
+  background-color: #212234; /* More accurate dark color for eyes */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Eye pupils */
+.pupil {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Mouth */
+.mouth {
+  width: 90px;
+  height: 45px;
+  background-color: #212234; /* Dark color matching eyes */
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  margin-top: 15px;
+}
+
+/* Bolts */
+.bolt {
+  width: 28px;
+  height: 14px;
+  background-color: #212234; /* Dark color matching other elements */
+  position: absolute;
+  top: 100px;
+  border-radius: 7px;
+}
+
+.left-bolt {
+  left: -28px;
+}
+
+.right-bolt {
+  right: -28px;
+}
+
+/* Neck */
+.neck {
+  width: 65px;
+  height: 110px;
+  background-color: #212234; /* Dark color matching other elements */
+  margin-top: -5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

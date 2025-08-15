@@ -1,0 +1,26 @@
+/* this is a comment */
+.text {
+  color: darkblue;
+  background-color: bisque;
+  border: 2px dotted;
+  outline: 2px solid blue;
+  /* top right bottom left */
+  margin: 50px auto;
+  /* margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-left: 30px; */
+  padding: 20px;
+  width: 200px;
+  /* height: 20px; */
+  text-align: center;
+  /* text-decoration: line-through dashed greenyellow; */
+  text-transform: capitalize;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 5px red ;
+}
+
+/* 
+p{
+    width: 150px;
+} */

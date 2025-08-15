@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="date">pick your date</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <br />
+      <div>
+        <label for="month">pick your month</label>
+        <input type="month" id="month" name="month" />
+      </div>
+      <br />
+      <div>
+        <label for="week">pick your week</label>
+        <input type="week" id="week" name="week" />
+      </div>
+      <br />
+      <div>
+        <input type="url" name="url" />
+      </div>
+
+      <br />
+      <div>
+        <input type="time" name="time" />
+      </div>
+      <br />
+
+      <div>
+        <label for="cars">pick your fav car</label>
+        <select name="cars" id="cars">
+          <option value="mercedecs">mercedecs</option>
+          <option value="bm">bm</option>
+          <option value="fiat">fiat</option>
+          <option value="tyota">tyota</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="messege">enter your messege</label><br />
+        <textarea
+          name="messege"
+          id="messege"
+          placeholder="enter a messege"
+          rows="15"
+          cols="50"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="a">pick your fav pet</label>
+        <input list="pets" id="a" />
+        <datalist id="pets">
+          <option value="dog">dog</option>
+          <option value="cat">cat</option>
+          <option value="camel">camel</option>
+          <option value="lion">lion</option>
+          <option value="tiger">tiger</option>
+        </datalist>
+      </div>
+      <br />
+      <div><input type="submit" /></div>
+    </form>
+  </body>
+</html>

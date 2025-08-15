@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form part 2</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <!-- type => kind of input -- نوع الحقل   -->
+        <!--Input ,label عشان اربط بين  -->
+        <!-- for = idلازم ال  -->
+        <label for="user">username</label>
+        <!-- input attributes -->
+        <!-- <input
+          type="text"
+          id="user"
+          placeholder="Enter your name"
+          name="user"
+          required
+          disabled
+          hidden
+          readonly
+          value="mohamed"
+          autofocus
+        /> -->
+        <input
+          type="text"
+          id="user"
+          placeholder="Enter your name"
+          name="user"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="pass">password</label>
+        <input
+          type="password"
+          id="pass"
+          placeholder="Enter your password"
+          name="password"
+          required
+          minlength="5"
+          maxlength="10"
+        />
+      </div>
+      <br />
+      <div>
+        <input type="color" name="color" />
+      </div>
+      <br />
+      <div>
+        <input type="range" min="50" max="500" value="250" name="range" />
+      </div>
+      <br />
+      <div>
+        <input type="number" name="num" max="50" />
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" id="html" checked name="html" />
+        <label for="html">html</label><br />
+        <input type="checkbox" id="css" name="css" />
+        <label for="css">css</label><br />
+        <input type="checkbox" id="js" name="js" />
+        <label for="js">js</label>
+      </div>
+      <br />
+      <div>
+        <input type="radio" name="fav" id="html" />
+        <label for="html">html</label><br />
+        <input type="radio" name="fav" id="css" />
+        <label for="css">css</label><br />
+        <input type="radio" name="fav" id="js" />
+        <label for="js">js</label><br />
+      </div>
+      <br />
+      <div>
+        <label for="cars">pick a car</label>
+        <select name="cars" id="cars">
+          <option value="mercedes">mercedes</option>
+          <option value="bm">bm</option>
+          <option value="toyotaa">toyotaa</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="messege">Enter a massege</label>
+        <br />
+        <textarea
+          name="messege"
+          id="messege"
+          placeholder="enter your messege"
+          rows="10"
+          cols="50"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="list">pick your fav car</label>
+        <input list="carss" id="list" />
+        <datalist id="carss">
+          <option value="bm"></option>
+          <option value="wv"></option>
+          <option value="mercedes"></option>
+          <option value="audi"></option>
+          <option value="toyota"></option>
+          <option value="kia"></option>
+          <option value="fiat"></option>
+        </datalist>
+      </div>
+
+      
+      <div>
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
