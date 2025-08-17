@@ -1,0 +1,13 @@
+/* this is a comment in css */
+h1 {
+  color: greenyellow;
+}
+/* class */
+.text {
+  color: red;
+}
+
+/* id  */
+#title {
+  color: blue;
+}
