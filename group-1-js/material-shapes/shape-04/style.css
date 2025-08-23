@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aebff7;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main .container {
+  position: relative;
+  width: 40%;
+  /* height: auto;
+  margin: 0.5em; */
+  max-height: 300px;
+}
+
+.scoop_container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bear .scoop_bear {
+  position: relative;
+  background-color: #cf825d;
+}
+
+.scoop_container .scoop {
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  border-radius: 50%;
+  margin: 0 auto -15%;
+}
+.eyes {
+  width: 100%;
+}
+
+.eyes::before,
+.eyes::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: 55%;
+  border: 8px solid;
+  border-color: #2b1e13 transparent transparent #2b1e13;
+  transform: rotate(45deg);
+}
+
+.eyes::before {
+  left: 20%;
+}
+
+.eyes::after {
+  right: 20%;
+}
+
+.snout {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  bottom: 25%;
+  left: 30%;
+  background-color: #e6bfac;
+}
+
+.nose {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  padding-bottom: 8%;
+  bottom: 48%;
+  left: 45%;
+  background-color: #23120a;
+  border-radius: 50%;
+}
+
+.icecream_cone {
+  position: relative;
+  z-index: 10;
+  width: 55%;
+  height: 0;
+  padding-bottom: 20%;
+  margin: 0 auto 20%;
+  border-radius: 15% 15% 100% 100%;
+  background-color: #f7e6ae;
+  box-shadow: inset 0 -4px 16px #f0d168;
+}
+
+.icecream_cone::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 110%;
+  bottom: -90%;
+  left: 15%;
+  border-radius: 0 0 15% 15%;
+  background-color: #f2d880;
+  background-image: linear-gradient(90deg, transparent 50%, #f7e6ae 50%),
+    linear-gradient(transparent 50%, #f7e6ae 50%);
+  background-size: 30% 55%;
+}
+
+.bear .scoop_bear .eyes {
+  background-color: #092227;
+}
+
+.bear .ear {
+  z-index: -1;
+  position: absolute;
+  top: -5%;
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%;
+  border-radius: 50%;
+  background-color: #cf825d;
+}
+
+.bear .ear .innerear {
+  position: absolute;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #e6bfac;
+}
+
+.bear .ear_left {
+  left: 20%;
+}
+
+.bear .ear_left .innerear {
+  left: 25%;
+}
+
+.bear .ear_right {
+  right: 20%;
+}
+
+.bear .ear_right .innerear {
+  right: 20%;
+}

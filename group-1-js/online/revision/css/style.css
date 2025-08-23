@@ -1,0 +1,73 @@
+#title {
+  color: blueviolet;
+}
+.text {
+  color: red;
+  border: 5px dashed blue; /*shorthand*/
+  border-radius: 15px;
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  text-decoration: underline black dotted;
+  text-transform: capitalize;
+  letter-spacing: 15px;
+  text-shadow: 2px 2px 5px blue;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: red; */
+  /* bad practice */
+  /* color: blue !important; */
+  /* background-color: aqua; */
+  /* height: 100px; */
+  /* outline: 2px solid red; */
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: blue; */
+}
+.parent2 {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 30px;
+  border: 2px solid black;
+  position: relative;
+}
+.parent {
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  margin-top: 30px;
+  border: 2px solid black;
+  /* position: relative; */
+}
+
+.child {
+  width: 10px;
+  height: 15px;
+  border: 2px solid black;
+}
+
+.child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.child2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.child3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.child4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

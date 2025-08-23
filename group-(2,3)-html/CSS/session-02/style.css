@@ -1,0 +1,51 @@
+.islam {
+  width: 300px;
+  color: darkblue;
+  background-color: azure;
+  border: 3px dashed red;
+  border-radius: 15px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: line-through dotted red;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.text {
+  font-size: 45px;
+  color: darkkhaki;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+div {
+  display: none;
+  /* visibility: hidden; */
+}
+
+span {
+  display: block;
+}
+
+.text-parag {
+  width: 400px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 15px;
+  color: aliceblue;
+  /* height: 65px; */
+  border: 1px solid gray;
+  /* overflow: auto; */
+  background-image: url(cabin-003.jpg);
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,11 +1,53 @@
-/* h1 {
-  color: red;
+/* this is a comment */
+
+/* select by tag
+h1 {
+  color: red; 
+}
+
+*/
+
+/* class */
+/* .text {
+  color: blue;
+} */
+
+/* id */
+/* #title {
+  color: aqua;
 } */
 
 .text {
-  color: white;
-  background-color: red;
-  width: 320px;
-  border: 6px solid blue;
-  outline: 5px solid black;
+  color: #28cf0f;
+  /* background-color: #000; */
+  border: 2px solid red;
+  outline: 2px solid blue;
+  border-radius: 10px;
+  margin: auto; /* shorthand */
+  padding: 10px;
+  width: 600px;
+  text-align: center;
+  text-decoration: line-through dotted blue;
+  text-transform: capitalize;
+  letter-spacing: 15px;
+  text-shadow: 5px 5px 5px red;
+  /* height: 150px; */
+  /* border-top: none; */
+  /* border-left: 3px dotted red;
+  border-right: 2px dashed aqua;
+  border-bottom: 3px double blue; */
+  /* 
+  margin-top: 15px;
+  margin-right: 35px; 
+  margin-bottom: 30px;
+  margin-left: 20px;
+  */
+}
+
+.cirlce {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: blue;
+  border-radius: 50%;
 }
