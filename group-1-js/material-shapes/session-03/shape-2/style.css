@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+  border: 2px solid blue;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  width: 200px;
+}

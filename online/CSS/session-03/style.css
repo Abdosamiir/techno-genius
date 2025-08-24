@@ -1,0 +1,55 @@
+/* .shape {
+  width: 500px;
+  background-color: blueviolet;
+  margin: auto;
+  color: #fff;
+  padding: 20px;
+}
+.shape-1,
+.shape-2 {
+  margin-bottom: 15px;
+}
+
+.shape-2 {
+  background-color: rgba(137, 43, 226, 0.711);
+}
+
+.shape-3 {
+  background-color: rgba(137, 43, 226, 0.185);
+} */
+
+.img {
+  width: 200px;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  /* border-radius: 50%; */
+  background-image: url(hero.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ul li {
+  list-style: none;
+}
+/* ul {
+  margin: 0;
+  padding: 0;
+} */
+
+div {
+  /*dont forget div by default is block element */
+  display: inline;
+}
+
+span {
+  /*dont forget span by default is inline element */
+  display: block;
+}
+
+h1,h2{
+  display: inline;
+}
