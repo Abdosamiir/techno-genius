@@ -1,0 +1,88 @@
+/* Moon style */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: #3b3b3b;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.square {
+  width: 550px;
+  height: 550px;
+  background-color: #7e1be5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-4%, -21%) rotate(45deg);
+  overflow: hidden;
+}
+
+.moon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 180px;
+  height: 180px;
+  background: #ebebeb;
+  border-radius: 50%;
+  transform: translate(0%, -50%);
+  border: 15px solid #a125ffac;
+  outline: 35px solid #a125ffac;
+  z-index: 2;
+}
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 350px;
+  height: 350px;
+  background: #7e1be5;
+  border-radius: 50%;
+  transform: translate(-25%, -50%);
+  border: 35px solid #9121f4;
+  outline: 35px solid #a125ffac;
+  z-index: -3;
+}
+
+.moon::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 50%;
+  left: 40px;
+  top: 20px;
+}
+.moon::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 50%;
+  left: 75px;
+  top: 20px;
+}
+
+/* 
+#b32cff,
+#a125ff,
+#9121f4,
+#7e1be5; */
+
+/* #ebebeb */
