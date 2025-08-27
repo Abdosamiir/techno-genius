@@ -1,0 +1,51 @@
+/* .bg-color {
+} */
+
+.div {
+  width: 500px;
+  height: 50px;
+  color: aliceblue;
+  background-color: blueviolet;
+  margin: auto;
+  padding: 20px 15px;
+}
+.div2 {
+  /* margin-top: 10px; */
+  padding: 20px 15px;
+  margin: 10px auto;
+  width: 500px;
+  background-color: rgba(137, 43, 226, 0.5);
+  height: 100px;
+  color: aliceblue;
+}
+.div3 {
+  margin: 10px auto;
+  padding: 20px 15px;
+
+  width: 500px;
+  height: 100px;
+  color: aliceblue;
+  background-color: rgba(137, 43, 226, 0.1);
+}
+
+.shape-1,
+.shape-2,
+.shape-3 {
+  width: 400px;
+  height: 400px;
+  margin: 15px auto;
+}
+
+.shape-1 {
+  background: url(css-assignment-5-8.png) no-repeat;
+  background-color: #ccc;
+}
+.shape-2 {
+  background: url(css-assignment-5-8.png) repeat-y;
+  background-color: #ccc;
+}
+
+.shape-3 {
+  background: url(css-assignment-5-8.png) repeat-x;
+  background-color: #ccc;
+}

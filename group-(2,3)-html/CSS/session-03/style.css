@@ -1,0 +1,62 @@
+a {
+  color: green;
+  font-size: 3rem;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: chocolate;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  margin: auto;
+  /* position: relative; */
+}
+.parent2 {
+  width: 800px;
+  height: 800px;
+  border: 2px solid black;
+  margin: auto;
+  position: relative;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  padding-left: 20px;
+}
+
+.child-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.child-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.child-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.child-4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
