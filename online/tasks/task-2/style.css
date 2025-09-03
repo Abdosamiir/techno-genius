@@ -1,0 +1,27 @@
+.layer-1,
+.layer-2,
+.layer-3 {
+  width: 150px;
+  height: 100px;
+  background-color: #ccc;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.layer-1 {
+  background-color: red;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+}
+
+.layer-2 {
+  background-color: blue;
+  z-index: -1;
+}
+.layer-3 {
+  background-color: green;
+  /* z-index: 3; */
+  top: 25px;
+  left: 25px;
+}
