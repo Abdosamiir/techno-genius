@@ -8,6 +8,53 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #49befe;
+  overflow: hidden;
+}
+.clouds {
+  position: relative;
+  animation: clouds 5s linear infinite forwards;
+  translate: 500px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.cloud {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  translate: 1px -285px;
+}
+.cloud::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 58px;
+}
+.two {
+  translate: 303px -21px;
+}
+.three {
+  translate: -382px -21px;
+}
+.four {
+  translate: 800px -100px;
+}
+.five {
+  translate: -1200px -200px;
+}
+.cloud::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 21px;
+  right: 58px;
 }
 .hair {
   width: 15px;
@@ -33,7 +80,6 @@ body {
   height: 200px;
   background-color: #ffec02;
   border-radius: 50%;
-  z-index: 2;
 }
 .eye {
   position: absolute;
@@ -43,7 +89,7 @@ body {
   border-radius: 50%;
   top: 30%;
   left: 66%;
-  animation: blink 3s linear infinite;
+  animation: blink 1s linear infinite;
 }
 .beak {
   width: 0;
@@ -64,6 +110,7 @@ body {
   top: 69%;
   right: 101%;
 }
+
 .bird-body {
   translate: -100px -92px;
   width: 300px;
@@ -71,43 +118,41 @@ body {
   height: 165px;
   background-color: #ffec02;
   border-radius: 10px 10px 141px 141px;
-  z-index: 2;
 }
-
 .wing {
   translate: 19px -13px;
   width: 140px;
   height: 79px;
   background-color: #ffce00;
   border-radius: 10px 10px 82px 82px;
-  animation: fly 2s linear infinite;
+  animation: fly 1s linear infinite;
 }
 .legs {
-  translate: 10px 79px;
-  animation: walking 3s linear infinite;
-  position: relative;
-  z-index: 1;
+  translate: -66px 307px;
 }
 .leg {
   width: 25px;
-  height: 80px;
+  height: 180px;
   background-color: #f17c00;
   position: absolute;
   bottom: -40px;
   left: 135px;
+  z-index: -1;
   rotate: 25deg;
 }
-
 .right-leg {
+  animation: walking 1.5s linear infinite;
   width: 25px;
-  height: 80px;
+  height: 180px;
   background-color: #f17c00;
   position: absolute;
   bottom: -5px;
   left: 210px;
   rotate: -35deg;
 }
-
+.left-leg {
+  animation: walking2 1.5s linear infinite;
+}
 .leg::after {
   content: "";
   width: 70px;
@@ -118,25 +163,22 @@ body {
   bottom: -14px;
   left: -10px;
 }
-.bird {
-  position: relative;
-}
-
-.legs {
-  position: absolute;
-  translate: 10px 260px;
-  animation: walking 3s linear infinite;
-  z-index: 1;
-}
-
 .bird::after {
   content: "";
   position: absolute;
   width: 177px;
   height: 30px;
   background-color: #4a92b8;
-  translate: -2px -30px;
+  translate: -3px 129px;
   border-radius: 20px;
+  animation: shadow 0.75s linear infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes shadow {
+  to {
+    width: 150px;
+    translate: 7px 129px;
+  }
 }
 @keyframes fly {
   0% {
@@ -161,14 +203,35 @@ body {
     height: 40px;
   }
 }
-/* @keyframes walking {
-    0%{
-        
-    }
-    50%{
-        rotate: 40deg;
-    }
-    100%{
-        rotate: 0deg;
-    }
-} */
+@keyframes walking {
+  0% {
+    rotate: -35deg;
+  }
+  50% {
+    rotate: 40deg;
+    bottom: -40px;
+    left: 160px;
+  }
+  100% {
+    rotate: -35deg;
+  }
+}
+@keyframes walking2 {
+  0% {
+    rotate: 25deg;
+  }
+  50% {
+    rotate: -40deg;
+  }
+  100% {
+    rotate: 25deg;
+  }
+}
+@keyframes clouds {
+  from {
+    translate: 500px;
+  }
+  to {
+    translate: -500px;
+  }
+}

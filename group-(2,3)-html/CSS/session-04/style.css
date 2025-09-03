@@ -1,0 +1,71 @@
+ol li {
+  width: 150px;
+  padding: 5px;
+  border: 2px solid;
+  list-style: disc inside url();
+  /* list-style-type: disc;
+  list-style-position: outside;
+  list-style-image: url(); */
+}
+
+ul li {
+  width: 150px;
+  padding: 5px;
+  border: 2px solid;
+  list-style: decimal inside;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  border: 2px solid;
+  margin: auto;
+  position: relative;
+}
+
+.layer-1,
+.layer-2,
+.layer-3 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+}
+
+.layer-1 {
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  /* red  */
+}
+.layer-2 {
+  background-color: blue;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.layer-3 {
+  background-color: blueviolet;
+  top: 15px;
+  left: 15px;
+  z-index: 3;
+}
+
+.pragraph {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid;
+  overflow: scroll;
+}
+
+.parent .child .title {
+  color: red;
+}
+
+.parent .title {
+  color: blue;
+}
