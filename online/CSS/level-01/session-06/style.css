@@ -1,0 +1,36 @@
+:root {
+  font-size: 25px;
+}
+
+.parent .title {
+  color: red;
+}
+.child .title {
+  color: blue;
+}
+
+.title {
+  color: aqua;
+}
+
+.parent p {
+  color: brown;
+}
+
+/* 1rem == 16px by defualt  */
+.parag {
+  width: 20rem; /*20*20 = 400*/
+  height: 50px;
+  border: 3px solid red;
+  padding: 20px;
+  margin: auto;
+}
+
+.parag div {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border: inherit;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+}
