@@ -1,0 +1,59 @@
+.title-1 {
+  width: fit-content;
+  background-color: brown;
+  text-transform: capitalize;
+  padding: 15px;
+  margin-top: 15px;
+  color: #fff;
+}
+.title-overflow {
+  width: fit-content;
+  height: 25px;
+  background-color: brown;
+  text-transform: capitalize;
+  padding: 15px;
+  margin-top: 15px;
+  color: black;
+  overflow: scroll;
+}
+
+.container img {
+  width: 150px;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /* display: none; */
+}
+
+.img-1 {
+  opacity: 0.2;
+}
+.img-2 {
+  opacity: 0.5;
+}
+
+.img-1:hover {
+  opacity: 1;
+}
+.img-2:hover {
+  opacity: 1;
+}
+
+ol li {
+  width: 200px;
+  border: 2px solid;
+  padding: 10px;
+  list-style: lower-roman inside;
+}
+
+ul li {
+  width: 200px;
+  margin-bottom: 15px;
+  border: 2px solid blue;
+  padding: 10px;
+  list-style: decimal-leading-zero inside;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+} 
