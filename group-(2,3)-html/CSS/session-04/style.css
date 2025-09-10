@@ -62,10 +62,7 @@ ul li {
   overflow: scroll;
 }
 
-.parent .child .title {
+/* .title{
   color: red;
-}
-
-.parent .title {
-  color: blue;
-}
+  font-size: 35px;
+  } */

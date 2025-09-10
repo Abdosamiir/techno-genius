@@ -1,0 +1,84 @@
+.parent .title {
+  font-size: 35px;
+  color: blue;
+}
+
+div.title {
+  font-size: 35px;
+  color: red;
+}
+.parent p {
+  color: blueviolet;
+  font-size: 35px;
+}
+
+.parent2 {
+  width: 500px;
+  height: 200px;
+  margin: 150px auto;
+  position: relative;
+  border-top: 4px solid #f44336;
+  border-bottom: 4px solid #f44336;
+  border-right: 4px solid #2196f3;
+  border-left: 4px solid #2196f3;
+  background-color: #cccccc7a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3;
+  padding: 15px;
+}
+
+.child {
+  width: 20px;
+  line-height: 1;
+  height: 20px;
+  /* border: 2px solid black; */
+  padding: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2196f3;
+}
+
+.child-1 {
+  position: absolute;
+  top: -20px;
+  left: -24px;
+  border-right: 4px solid #f44336;
+}
+
+.child-2 {
+  border-left: 4px solid #f44336;
+  position: absolute;
+  top: -20px;
+  right: -24px;
+}
+
+.child-3 {
+  position: absolute;
+  bottom: -20px;
+  left: -24px;
+  border-right: 4px solid #f44336;
+}
+
+.child-4 {
+  position: absolute;
+  border-left: 4px solid #f44336;
+  bottom: -20px;
+  right: -24px;
+}
+
+img {
+  width: 200px;
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+.img-1:hover {
+  opacity: 0.8;
+}
+
+.img-2:hover {
+  opacity: 0.5;
+}
+.img-3:hover {
+  opacity: 0.2;
+}
