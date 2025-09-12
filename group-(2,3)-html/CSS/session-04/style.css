@@ -1,3 +1,7 @@
+:root {
+  font-size: 20px;
+}
+
 ol li {
   width: 150px;
   padding: 5px;
@@ -58,11 +62,58 @@ ul li {
   width: 200px;
   height: 100px;
   padding: 10px;
-  border: 2px solid;
-  overflow: scroll;
+  border: 2px solid red;
+  font-size: 2rem;
 }
 
+.circle {
+  width: 100px;
+  height: 50px;
+  padding: inherit;
+  border: inherit;
+}
 /* .title{
   color: red;
   font-size: 35px;
   } */
+/* .parent .title{
+    color: blue;
+    font-size: 32px;
+   } */
+
+/* .parent .child .title {
+  color: red;
+  font-size: 35px;
+} */
+
+span.title {
+  color: red;
+  font-size: 35px;
+}
+
+.parent p {
+  color: blueviolet;
+  font-size: 35px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
