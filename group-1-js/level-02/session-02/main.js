@@ -15,11 +15,20 @@ function changeTxt() {
 
 const div = document.createElement("div");
 div.innerText = "hello haya";
+div.className = "text";
 console.log(div);
-div.style.width = "fit-content";
-div.style.backgroundColor = "red";
-div.style.padding = "10px";
-div.style.border = "5px solid blue";
-div.style.marginTop = "15px";
+// div.style.width = "fit-content";
+// div.style.backgroundColor = "red";
+// div.style.padding = "10px";
+// div.style.border = "5px solid blue";
+// div.style.marginTop = "15px";
 
-document.body.appendChild(div);
+for (let i = 1; i <= 5; i++) {
+  const div = document.createElement("div");
+  div.innerText = "hello haya";
+  div.className = "text";
+  // console.log(div);
+  document.body.appendChild(div);
+}
+
+
