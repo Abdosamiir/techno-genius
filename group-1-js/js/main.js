@@ -46,3 +46,6 @@ for (let i = 1; i <= 10; i++) {
   div.className = "text";
   document.body.append(div);
 }
+
+
+// ازيك يا محمد 
