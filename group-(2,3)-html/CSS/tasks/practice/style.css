@@ -1,10 +1,9 @@
 .container {
   width: 350px;
-  padding: 50px;
-  margin: 50px auto;
+  padding: 20px;
   border: 2px solid;
+  margin: auto;
 }
-
 .face {
   width: 100px;
   height: 100px;
@@ -24,45 +23,49 @@
   border-radius: 12px;
 }
 
-.left-foot {
+.legs {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.left-foot,
+.right-foot {
   width: 50px;
-  display: inline-block;
-  border-radius: 12px;
-  height: 200px;
-  border: 2px solid;
+  height: 140px;
   background-color: blue;
+  border-radius: 12px;
+}
+/* 
+.left-foot {
   margin-left: 100px;
 }
 .right-foot {
-  display: inline-block;
-  border-radius: 12px;
-  width: 50px;
-  height: 200px;
-  border: 2px solid;
-  background-color: blue;
-  margin-left: 38px;
-}
+  margin-left: 45px;
+} */
 
 .left-hand {
   position: absolute;
-  width: 50px;
-  height: 130px;
+  left: -45px;
+  top: -12px;
+  width: 40px;
+  height: 140px;
   border: 2px solid;
-  border-radius: 12px;
   background-color: red;
-  z-index: -1;
-  translate: -46px -6px;
+  border-radius: 12px;
   rotate: 45deg;
+  z-index: -1;
 }
+
 .right-hand {
   position: absolute;
-  width: 50px;
-  height: 130px;
+  right: -45px;
+  top: -12px;
+  width: 40px;
+  height: 140px;
   border: 2px solid;
-  border-radius: 12px;
   background-color: red;
-  z-index: -1;
-  /* translate: -46px -6px; */
-  right: -50px;
+  border-radius: 12px;
   rotate: -45deg;
+  z-index: -1;
 }
