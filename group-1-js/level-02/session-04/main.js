@@ -74,23 +74,4 @@ console.log(
 console.log(Math.random(1, 10));
 console.log(Math.pow(3, 2));
 console.log(Math.abs(-4.7));
-// task 1
-for (let i = 10; i <= 100; i += 10) {
-  if (i == 40) continue;
-  console.log(i);
-}
-// task 2
-for (let i = 10; i >= 3; i--) {
-  if (i < 10) {
-    console.log("0" + i);
-  } else {
-    console.log(String(i));
-  }
-}
 
-for (let i = 1; i <= 6; i++) {
-  console.log(i);
-  for (let j = 2; j <= 4; j += 2) {
-    console.log("-- " + j);
-  }
-}

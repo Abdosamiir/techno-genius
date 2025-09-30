@@ -1,0 +1,77 @@
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+/*pseudo classes */
+.square:hover {
+  background-color: blue;
+}
+
+p {
+  width: 400px;
+  font-size: 30px;
+}
+
+/* span {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+} */
+
+/*pseudo Elements */
+p::first-letter {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+p::first-line {
+  color: blue;
+}
+
+p::selection {
+  color: #fff;
+  background-color: green;
+}
+
+ul li::marker {
+  color: red;
+}
+
+ol li::marker {
+  color: blue;
+}
+
+.text,
+.text-arr {
+  width: fit-content;
+  background-color: #ccc;
+  padding: 15px;
+  position: relative;
+  margin: 10px auto;
+}
+
+.text::before {
+  content: "1";
+  position: absolute;
+  color: #fff;
+  padding: 8px;
+  background-color: orangered;
+  top: 7px;
+  left: -10px;
+}
+
+.text-arr {
+  border-left: 5px solid red;
+}
+
+.text-arr::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent red transparent transparent;
+  position: absolute;
+  left: -22px;
+}

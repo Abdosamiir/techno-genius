@@ -1,0 +1,18 @@
+.text {
+  margin: 150px auto;
+  width: fit-content;
+  background-color: #ccc;
+  padding: 20px;
+  font-size: 25px;
+  text-transform: capitalize;
+  border-left: 5px solid red;
+  position: relative;
+}
+
+.text::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  border: 10px solid;
+  border-color: transparent red transparent transparent;
+}

@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  gap: 10px;
+}
+.text {
+  display: inline-block;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: red;
+  color: #fff;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-left: 10px;
+}

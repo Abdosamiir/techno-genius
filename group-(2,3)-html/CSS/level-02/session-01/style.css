@@ -1,0 +1,74 @@
+/* a {
+  font-size: 34px;
+}
+
+a:hover {
+  color: red;
+}
+a:active {
+    color: blueviolet;
+}
+
+a:link{
+    color: black;
+} */
+
+/* a:visited{
+    color: chartreuse;
+} */
+p {
+  width: 500px;
+  font-size: 25px;
+}
+
+p::first-line {
+  color: blue;
+}
+p::first-letter {
+  color: white;
+  background-color: red;
+  font-size: 35px;
+}
+
+::marker {
+  color: blue;
+}
+
+.frist-listitem::marker {
+  color: red;
+}
+
+::selection {
+  color: black;
+  background-color: red;
+}
+
+.last-item::selection {
+  background-color: blueviolet;
+}
+
+.text-frist,
+.text-then {
+  /* position: relative; */
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.text-frist::before {
+  content: "abdo";
+  /* position: absolute; */
+  width: 200px;
+  height: 20px;
+  background-color: red;
+}
+.text-then::after {
+  content: "hello";
+  /* position: absolute; */
+  width: 200px;
+  height: 20px;
+  background-color: red;
+}
