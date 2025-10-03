@@ -1,0 +1,93 @@
+/* div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  background-color: #c5c0c0;
+  margin-top: 10px;
+} */
+
+/* .red {
+  background-color: red;
+} */
+
+div:nth-child(2) {
+  background-color: red;
+}
+
+div {
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  background-color: #c5c0c0;
+}
+div::first-letter {
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  margin-left: -20px;
+}
+
+/* p {
+  position: relative;
+  width: 350px;
+  margin: auto;
+  background-color: #c5c0c0;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+p::after {
+  content: "";
+  border: 10px solid red;
+  border-color: transparent red transparent transparent;
+  position: absolute;
+  left: -23px;
+}
+p::before {
+  content: attr(data);
+  position: absolute;
+  width: 35px;
+  padding: 5px;
+  background-color: red;
+  color: #fff;
+  left: -70px;
+  top: 5px;
+}
+
+span {
+  border: 10px solid red;
+  border-color: transparent transparent transparent red;
+  position: absolute;
+  right: -22px;
+} */
+
+p {
+  width: 400px;
+  background-color: #eee;
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  border-right: 5px solid rgb(255, 60, 0);
+  counter-increment: number;
+}
+
+p::before {
+  content: counter(number);
+  position: absolute;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(255, 60, 0);
+  color: white;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  left: -60px;
+  top: 0px;
+}

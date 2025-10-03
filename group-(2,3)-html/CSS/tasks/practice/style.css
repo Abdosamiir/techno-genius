@@ -1,6 +1,6 @@
 .container {
   width: 350px;
-  padding: 20px;
+  padding: 30px;
   border: 2px solid;
   margin: auto;
 }
@@ -11,6 +11,39 @@
   border: 2px solid;
   margin: auto;
   background-color: blue;
+}
+
+.hair {
+  position: absolute;
+  top: -25px;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.hair::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  z-index: -1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+}
+.hair::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  z-index: -1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .body-human {

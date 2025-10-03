@@ -1,0 +1,97 @@
+:root {
+  --main-color: red;
+  --main-width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+  width: var(--main-width);
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square1 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square2 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square3 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square4 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square5 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square6 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square7 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+.square8 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 35px;
+  transition: all 1s ease-in-out;
+}
+
+.square:hover {
+  width: 400px;
+  height: 400px;
+  font-size: 45px;
+}
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-color);
+  transition: width 2s, height 4s, background-color 3s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+} */
