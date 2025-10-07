@@ -38,3 +38,14 @@ submit.addEventListener("click", (e) => {
     document.body.appendChild(div);
   }
 });
+
+// console.log(window);
+
+// alert("hello");
+
+// function sum(x, y) {
+//   const sum = x + y;
+//   return sum;
+// }
+
+// sum(5, 7);
