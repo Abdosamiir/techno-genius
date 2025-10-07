@@ -1,0 +1,55 @@
+.parent {
+  width: fit-content;
+  background-color: #cfcfcf;
+  padding: 20px;
+  height: 90px;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.parent:hover {
+  margin-top: 30px;
+}
+
+.child {
+  width: fit-content;
+  background-color: #6c6c6c;
+  padding: inherit;
+  transition: 0.5s linear;
+}
+
+.parent:hover .child {
+  margin-top: 30px;
+}
+
+.text {
+  position: relative;
+  background-color: #cfcfcf !important;
+  border: none !important;
+  color: transparent !important;
+  user-select: none;
+}
+
+.text::before {
+  content: "elzero";
+  position: absolute;
+  color: black;
+  text-transform: capitalize;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+} */
+
+div {
+  /* color: red; */
+  color: var(--mainColor, red);
+  border: 2px solid var(--mainColor, black);
+  padding: var(--mainPadding, 10px);
+  margin-top: 10px;
+}
