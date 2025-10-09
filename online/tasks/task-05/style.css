@@ -1,0 +1,118 @@
+/* :root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: fit-content;
+  padding: 20px;
+  background-color: #dcdadac7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+button {
+  background-color: rgb(0, 157, 255);
+  width: 200px;
+  padding: 8px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.line {
+  position: relative;
+  width: 1.5px;
+  background-color: rgb(0, 157, 255);
+}
+
+.or {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(0, 157, 255);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent {
+  background-color: #dcdadac7;
+  width: fit-content;
+  padding: 20px;
+  text-align: center;
+  height: 95px;
+  margin: 0 auto;
+  transition: 0.5s ease;
+}
+
+.child {
+  background-color: #ccc;
+  padding: inherit;
+  transition: 0.7s linear;
+}
+
+.parent:hover {
+  margin-top: 20px;
+}
+
+.parent:hover .child {
+  margin-top: 20px;
+}
+
+.edit {
+  position: relative;
+  background-color: #ccc !important;
+  border: none !important;
+  color: transparent !important;
+  text-align: center;
+
+  user-select: none;
+}
+
+.edit::before {
+  content: "mohamed";
+  color: black;
+  position: absolute;
+  left: 30%;
+} */
+
+/* :root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+div {
+  width: 300px;
+  color: var(--mainColor,red);
+  border: 2px solid var(--mainColor,black);
+  padding: var(--mainPadding, 10px);
+  margin-top: 10px;
+} */
