@@ -68,3 +68,65 @@
 // const heaviestFetchBreed = Math.max(...fetchWeights);
 // console.log(fetchWeights);
 // console.log(heaviestFetchBreed);
+
+// const arr = ["abdo", "mohamed"];
+// console.log(arr[0]);
+
+// const obj = {
+//   breed: "german",
+//   averageWeight: 32,
+//   activities: ["fetch", "swim", "ababa"],
+// };
+
+// console.log(obj.)
+
+const breeds = [
+  {
+    breed: "German Shepherd",
+    averageWeight: 32,
+    activities: ["fetch", "swimming"],
+  },
+  {
+    breed: "Dalmatian",
+    averageWeight: 24,
+    activities: ["running", "fetch", "agility"],
+  },
+  {
+    breed: "Labrador",
+    averageWeight: 28,
+    activities: ["swimming", "fetch"],
+  },
+  {
+    breed: "Beagle",
+    averageWeight: 12,
+    activities: ["digging", "fetch"],
+  },
+  {
+    breed: "Husky",
+    averageWeight: 26,
+    activities: ["running", "agility", "swimming"],
+  },
+  {
+    breed: "Bulldog",
+    averageWeight: 36,
+    activities: ["sleeping"],
+  },
+  {
+    breed: "Poodle",
+    averageWeight: 18,
+    activities: ["agility", "fetch"],
+  },
+];
+
+// console.log(breeds[4]);
+const swimActiv = breeds.filter((breed) =>
+  breed.activities.includes("sleeping")
+);
+console.log(swimActiv);
+
+const husckyAvrWghiet = breeds.find((breed) => breed.averageWeight === 18);
+console.log(husckyAvrWghiet);
+
+const arr = breeds.flatMap((x) => x.activities);
+
+console.log([...new Set(arr)]);
