@@ -1,0 +1,37 @@
+div {
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  height: 60px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+/*psudo class*/
+/* div:empty {
+  background-color: red;
+} */
+
+div:nth-child(2) {
+  background-color: blue;
+}
+
+p {
+  position: relative;
+  width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #ccc;
+  border-right: 5px solid red;
+  counter-increment: num;
+}
+
+p::before {
+  content: counter(num);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: #fff;
+  padding: 20px;
+}
