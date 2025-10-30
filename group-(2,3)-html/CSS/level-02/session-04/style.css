@@ -1,0 +1,142 @@
+/* .parent {
+  width: 650px;
+  background-color: #ccc;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.parent div {
+  width: calc(80% / 3);
+  height: fit-content;
+  color: #fff;
+  background-color: red;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+/* .parent {
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.parent div {
+  width: calc(95% / 3);
+  background-color: #607d8b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  order: 6;
+  height: 40px;
+  align-self: end;
+}
+
+.two {
+  order: 5;
+}
+.three {
+  order: 2;
+  height: 40px;
+}
+
+.four {
+  order: 3;
+}
+
+.five {
+  order: 4;
+} */
+
+/* .parent {
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  background-color: blue;
+  height: 100%;
+}
+
+.one,
+.three {
+  width: 5%;
+  align-self: end;
+}
+
+.two {
+  width: 50%;
+} */
+
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  gap: 50px;
+}
+
+.parent div {
+  width: calc(95% / 4);
+  height: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  background-color: orange;
+  order: 2;
+}
+
+.two {
+  background-color: greenyellow;
+  order: 3;
+  align-self: end;
+}
+
+.three {
+  background-color: brown;
+  order: 4;
+}
+
+.four {
+  background-color: blueviolet;
+  order: 1;
+  align-self: end;
+}
+
+body {
+  background: linear-gradient(to top, bottom, blue red);
+  height: 100vh;
+}
