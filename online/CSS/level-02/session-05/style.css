@@ -1,0 +1,32 @@
+img {
+  width: 500px;
+  /* filter: brightness(30%); */
+}
+
+body {
+  background-image: linear-gradient(to top right, blue, red);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: 2px solid black;
+  /* transform: scale(1); */
+  scale: 1;
+  rotate: 180deg;
+  translate: 500px 0px;
+  transition: all 0.5s ease;
+}
+
+.square:hover {
+  background-color: orange;
+  /* transform: scale(1.8); */
+  translate: 0px 0px;
+  scale: 1.8;
+  rotate: 0deg;
+}

@@ -1,28 +1,30 @@
+/* CSS TASK 1 */
+
 /* .parent {
-  width: 650px;
-  background-color: #ccc;
-  height: 300px;
+  width: 600px;
+  height: 400px;
+  background-color: #eee;
+  border: 2px solid #333;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
+  flex-wrap: wrap;
 }
 
 .parent div {
-  width: calc(80% / 3);
-  height: fit-content;
-  color: #fff;
-  background-color: red;
+  background-color: orangered;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
   text-align: center;
-}
+  height: fit-content;
+  width: calc(80% / 3);
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
 } */
+
+/* CSS TASK 2 */
 
 /* .parent {
   width: 600px;
@@ -66,35 +68,7 @@ body {
   order: 4;
 } */
 
-/* .parent {
-  width: 600px;
-  height: 300px;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: #eee;
-  display: flex;
-  flex-direction: column;
-}
-
-.parent div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #eee;
-  background-color: blue;
-  height: 100%;
-}
-
-.one,
-.three {
-  width: 5%;
-  align-self: end;
-}
-
-.two {
-  width: 50%;
-} */
-
+/* CSS TASK 3 */
 .parent {
   width: 600px;
   height: 300px;
@@ -112,10 +86,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
 }
 
 .one {
   background-color: orange;
+  /* order: 2; */
   order: 2;
 }
 
@@ -134,9 +110,4 @@ body {
   background-color: blueviolet;
   order: 1;
   align-self: end;
-}
-
-body {
-  background: linear-gradient(to top bottom, blue red);
-  height: 100vh;
 }
