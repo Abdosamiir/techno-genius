@@ -21,12 +21,11 @@
   text-align: center;
   height: fit-content;
   width: calc(80% / 3);
-
 } */
 
 /* CSS TASK 2 */
-
-/* .parent {
+/* 
+.parent {
   width: 600px;
   height: 300px;
   margin: 10px auto;
@@ -45,11 +44,10 @@
   justify-content: center;
   align-items: center;
 }
-
 .one {
   order: 6;
   height: 40px;
-  align-self: end;
+  align-self: flex-end;
 }
 
 .two {
@@ -82,16 +80,15 @@
 .parent div {
   width: calc(95% / 4);
   height: 50%;
+  /* background-color: #607d8b; */
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 
 .one {
   background-color: orange;
-  /* order: 2; */
   order: 2;
 }
 
