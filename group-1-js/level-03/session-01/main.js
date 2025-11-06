@@ -127,6 +127,20 @@ console.log(swimActiv);
 const husckyAvrWghiet = breeds.find((breed) => breed.averageWeight === 18);
 console.log(husckyAvrWghiet);
 
-const arr = breeds.flatMap((x) => x.activities);
+const arr = breeds.flatMap((breed) => breed.activities);
 
-console.log([...new Set(arr)]);
+console.log(...new Set(arr));
+
+// console.log([...new Set(arr)]);
+
+// const namesArr = ["abdo", "haya", ["hamza", "elderberry"]];
+
+// console.log(namesArr.flat());
+
+// const humans = ["abdo", "haya", "hamza", "elderberry"];
+
+// console.log([...animals, ...humans]);
+
+const animals = ["dog", "cat", ["elephant", ["tiger", "lion",["deer"]]]];
+
+console.log(animals.flat());

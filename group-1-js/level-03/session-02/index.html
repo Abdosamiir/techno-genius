@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+      }
+      .text {
+        display: inline-block;
+        width: fit-content;
+        padding: 5px 10px;
+        background-color: red;
+        color: #fff;
+        border-radius: 12px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2>js dom</h2>
+      <input
+        type="text"
+        id="num"
+        name="num"
+        placeholder="Enter the number of divs"
+      />
+      <input
+        type="text"
+        id="word"
+        name="word"
+        placeholder="Enter the text for divs"
+      />
+      <input type="submit" id="submit" value="create" />
+    </form>
+  </body>
+</html>
