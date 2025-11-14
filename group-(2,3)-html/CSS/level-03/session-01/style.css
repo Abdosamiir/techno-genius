@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parent {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  /* transform: skew(10deg, 10deg); */
+  /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+  transform: matrix(3, 0.2679, 0, 3, 20, 100);
+  animation: spin 0.5s linear 0.5s 5 normal forwards;
+  animation: name duration timing-function delay iteration-count;
+
+  /* animation-name: spinner; */
+  /* animation-duration: 4s; */
+  /* animation-timing-function: linear; */
+  /* animation-delay: 0.5s;
+  animation-iteration-count: 5;
+  animation-direction: normal;
+  animation-fill-mode: forwards; */
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 2px solid #333;
+  border-right: 2px solid white;
+  animation: spin 0.5s linear 0.2s infinite;
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  animation: move 3s ease-in-out infinite forwards;
+}
+
+@keyframes move {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 500px 0;
+  }
+  100% {
+    translate: -500px 0;
+  }
+}
