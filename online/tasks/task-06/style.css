@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid red;
+  border-left: 8px solid white;
+  transition: all 0.5s;
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 16px solid blue;
+  border-right: 16px solid white;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.circle:hover::before {
+  rotate: 180deg;
+}
+.circle:hover::after {
+  rotate: 180deg;
+}

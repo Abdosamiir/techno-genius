@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.skew {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  /* rotate: 45deg;
+  translate: 100px;
+  scale: 1.8; */
+  /* transform: skew(0, 20deg); */
+  transform: rotate3d(0, 1, 0, 60deg);
+}
