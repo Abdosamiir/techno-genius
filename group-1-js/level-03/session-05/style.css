@@ -1,0 +1,139 @@
+:root {
+  --bg-main-color: #072f25;
+  --main-padding: 10px 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: var(--bg-main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--main-padding);
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+header nav ul li {
+  color: wheat;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  color: lightcoral;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.heading-rec {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.heading-rec span {
+  color: red;
+}
+
+.card {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h3,
+.card p {
+  padding: 0 10px;
+  padding-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--main-padding);
+  gap: 30px;
+}
+
+.add-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-btn:hover {
+  background-color: darkred;
+}
+
+footer {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-main-color);
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.chief {
+  width: 400px;
+  border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#about .container p {
+  width: 50%;
+  font-size: 30px;
+}
+#about .container p::first-line {
+  color: red;
+  font-weight: bold;
+}
