@@ -91,6 +91,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: var(--main-padding);
   gap: 30px;
 }
@@ -136,4 +137,52 @@ footer {
 #about .container p::first-line {
   color: red;
   font-weight: bold;
+}
+
+#addRecipeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+#addRecipeForm input {
+  width: 500px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+textarea {
+  width: 500px;
+  height: 120px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#addRecipeForm button {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#addRecipeForm button:hover {
+  background-color: green;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#addRecipeForm .cancel-btn:hover {
+  color: white;
+  background-color: red;
+}
+
+.form-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
 }

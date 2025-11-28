@@ -12,7 +12,7 @@
 
     <header>
       <!-- logo  -->
-      <img src="/imgs/logo.png" alt="logo" class="logo-img" />
+      <img src="imgs/logo.png" alt="logo" class="logo-img" />
       <!-- links in nav -->
       <nav>
         <ul>
@@ -58,6 +58,32 @@
             </p>
           </div>
         </div>
+
+        <!-- Form to add new recipe -->
+        <div class="form-container" id="formContainer">
+          <form id="addRecipeForm">
+            <input
+              type="text"
+              id="recipeTitle"
+              placeholder="Recipe Title"
+              required
+            />
+            <input
+              type="url"
+              id="recipeImage"
+              placeholder="Image URL"
+              required
+            />
+            <textarea
+              id="recipeDescription"
+              placeholder="Recipe Description"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+          </form>
+        </div>
+
         <button class="add-btn">add item</button>
       </section>
 

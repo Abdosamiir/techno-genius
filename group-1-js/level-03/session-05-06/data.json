@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://fakerestaurantapi.runasp.net/images/baklava.jpg",
+    "title": "جلاش",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 2,
+    "image": "imgs/burger.jpg",
+    "title": "Dumplings",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 3,
+    "image": "imgs/pizza.jpg",
+    "title": "Pizza",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 4,
+    "image": "imgs/macncheese.jpg",
+    "title": "Mac and Cheese",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 5,
+    "image": "imgs/curry.jpg",
+    "title": "curry",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 6,
+    "image": "imgs/schnitzel.jpg",
+    "title": "Schnitzel",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 7,
+    "image": "imgs/tomato-salad.jpg",
+    "title": "tomato salad",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 8,
+    "image": "https://fakerestaurantapi.runasp.net/images/bagara%20baigan.webp",
+    "title": "Pancakes",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 9,
+    "image": "https://fakerestaurantapi.runasp.net/images/bengali%20thali.jpg",
+    "title": "Ramen",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  },
+  {
+    "id": 10,
+    "image": "https://fakerestaurantapi.runasp.net/images/berry%20pulav.jpeg",
+    "title": "Caesar Salad",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, enim."
+  }
+]
