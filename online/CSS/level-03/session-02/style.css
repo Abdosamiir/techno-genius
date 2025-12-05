@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*
+.spinner1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid orange;
+  border-bottom: 5px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 1s linear 0.1s infinite;
+}
+
+.spinner1:hover {
+  animation-play-state: paused;
+}
+
+.spinner2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid blue;
+  border-left: 5px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner3 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid red;
+  border-right: 5px solid transparent;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+} */
+/* 
+.letter-L {
+  width: 180px;
+  height: 65px;
+  background-color: black;
+  position: relative;
+}
+
+.letter-L::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 200px;
+  background-color: black;
+  top: -200px;
+  z-index: -1;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  position: absolute;
+  right: 0;
+  margin: 8px;
+  animation: move 2s linear 0.1s infinite forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-115px, 0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-115px, -200px);
+    opacity: 0;
+  }
+} */
+
+.text {
+  color: red;
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .text {
+    color: green;
+    font-size: 30px;
+  }
+  body {
+    align-items: start;
+  }
+}
+@media (max-width: 375px) {
+  .text {
+    color: yellow;
+    font-size: 15px;
+  }
+  body {
+    align-items: end;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+}
