@@ -1,0 +1,250 @@
+/* Start Variables */
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin: auto;
+  position: relative;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 38px;
+  transform: translate(-50%, -50%);
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  right: -13px;
+  transform: translate(-50%, -50%);
+}
+
+.desc {
+  text-align: center;
+  color: gray;
+  width: 40%;
+  margin: 60px auto;
+  line-height: 1.8;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 500px;
+}
+
+.box form {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.input {
+  width: 700px;
+  border: 2px solid #eee;
+  padding: 20px;
+}
+
+.input:focus {
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+
+.input-submit {
+  border: none;
+  color: white;
+  background-color: var(--main-color);
+  padding: 20px;
+}
+
+.box .inner-box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.inner-box .same p {
+  margin-top: 25px;
+  color: gray;
+}
+
+.inner-box .same h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.to-top {
+  margin-bottom: 115px;
+}
+
+footer {
+  margin-top: 200px;
+  background: url(../images/subscribe.jpg) no-repeat center;
+  background-position: top;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.inner-foot h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.inner-foot h3::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1.5px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 35px;
+}
+
+.video {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: brightness(0.4); */
+}
+
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.video .text {
+  background-color: var(--transparent-color);
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.video .text h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.video .text button {
+  width: 100px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 11px;
+  text-transform: uppercase;
+}
