@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  display: none;
+  z-index: 100;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  nav ul {
+    display: none;
+  }
+  button {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.links {
+  width: 200px;
+  height: 100vh;
+  background-color: #eee;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#btn-close {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.active {
+  display: none;
+}
