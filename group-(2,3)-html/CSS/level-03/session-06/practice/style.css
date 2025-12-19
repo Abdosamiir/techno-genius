@@ -1,0 +1,132 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 20px 20px;
+}
+
+span {
+  width: 60px;
+  height: 4px;
+  background-color: black;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.container:hover span:nth-child(2) {
+  opacity: 0;
+}
+.container:hover span:nth-child(3),
+.container:hover span:nth-child(1) {
+  position: absolute;
+  background-color: red;
+  transform: rotate(45deg);
+}
+
+.container:hover span:nth-child(3) {
+  transform: rotate(-45deg);
+} 
+
+.page {
+  height: 100vh;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  border: 1px gray solid;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.card .img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  width: 160%;
+  height: 90%;
+  background-color: lightseagreen;
+  border-radius: 40%;
+  top: 50%;
+  left: 43%;
+  z-index: -1;
+  animation: wave 5s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  from {
+    transform: translate(-50%, 0) skew(0, -10deg);
+  }
+  to {
+    transform: translate(-30%, 0) skew(10deg, 0);
+  }
+}
+
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* h1 {
+  font-size: 10rem;
+  background: linear-gradient(to right, blue, red);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  color: transparent;
+} */
+
+p {
+  font-size: 30px;
+  width: 425px;
+  border-right: 2px solid;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: move 3s 2s steps(30) infinite both, blink 0.5s infinite ;
+}
+
+@keyframes move {
+  from {
+    width: 0;
+  }
+  to {
+    width: 425px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
