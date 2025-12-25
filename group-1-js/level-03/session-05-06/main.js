@@ -23,19 +23,49 @@ navLinks.forEach((link) => {
   });
 });
 
-fetch("data.json")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-    // You can now use the data here
-    displayCards(data);
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
-
 // Store cards data globally
 let cardsData = [];
+
+// Function to save data to localStorage
+function saveToLocalStorage() {
+  localStorage.setItem("cardsData", JSON.stringify(cardsData));
+}
+
+// Function to load data from localStorage
+function loadFromLocalStorage() {
+  const storedData = localStorage.getItem("cardsData");
+  if (storedData) {
+    return JSON.parse(storedData);
+  }
+  return null;
+}
+
+// Load data on page load
+function loadData() {
+  // First, try to load from localStorage
+  const localData = loadFromLocalStorage();
+
+  if (localData && localData.length > 0) {
+    // If we have data in localStorage, use it
+    displayCards(localData);
+  } else {
+    // Otherwise, fetch from data.json
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        displayCards(data);
+        // Save initial data to localStorage
+        saveToLocalStorage();
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }
+}
+
+// Load data when page loads
+loadData();
 
 // Function to display cards
 function displayCards(cards) {
@@ -72,6 +102,7 @@ function displayCards(cards) {
 function deleteCard(index) {
   cardsData.splice(index, 1);
   displayCards(cardsData);
+  saveToLocalStorage(); // Save to localStorage after deleting
 }
 
 // Function to show the form
@@ -105,6 +136,7 @@ function addCard(e) {
 
   cardsData.push(newCard);
   displayCards(cardsData);
+  saveToLocalStorage(); // Save to localStorage after adding
   hideForm();
 }
 
