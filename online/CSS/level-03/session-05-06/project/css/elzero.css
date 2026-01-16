@@ -18,3 +18,166 @@ html {
 body {
   font-family: "Cairo", sans-serif;
 }
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  padding: 10px 0;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li {
+  text-transform: capitalize;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all var(--main-transition);
+}
+/* nav ul li:hover {
+  background-color: var(--section-background);
+  color: var(--main-color);
+  border-top: 2px solid var(--main-color);
+} */
+
+/* make while i hover the border top come from right and the background color change smoothly taken full height */
+
+nav ul li {
+  position: relative;
+  overflow: hidden;
+}
+nav ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform var(--main-transition);
+}
+nav ul li:hover::before {
+  transform: translateX(0);
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  padding: var(--main-padding-top) 0 var(--main-padding-bottom) 0;
+  background-color: var(--section-background);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  transform: skewY(-4deg);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.hero img {
+  width: 550px;
+  object-fit: cover;
+  /* display: none; */
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-40px);
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  transform: translate(-50%, -50%);
+  color: var(--main-color);
+  cursor: pointer;
+  animation: arrow-move 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes arrow-move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/*for tablet and bloew*/
+
+@media (max-width: 999px) {
+  .hero {
+    padding: 20px;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero p {
+    width: 50%;
+    line-height: 1.6;
+  }
+}
+
+/*for mobile*/
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .hero .hero-content {
+    text-align: center;
+  }
+  .hero p {
+    width: 100%;
+  }
+}
