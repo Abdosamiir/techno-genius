@@ -1,0 +1,138 @@
+:root {
+  --dark-navy: #0f172a;
+  --gray-blue: #1e293b;
+  --bright-blue: #3b82f6;
+  --cyan-color: #22d3ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-navy);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background: var(--gray-blue);
+  transition: background 1.5s ease-in-out;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0) scale(1);
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    var(--bright-blue),
+    var(--cyan-color),
+    violet
+  );
+  transition: transform 0.6s ease-in-out;
+  z-index: 0;
+}
+
+.card .circle:hover ~ *,
+.card .circle:hover,
+.card:has(.circle:hover)::before {
+  z-index: 1;
+}
+
+.card:has(.circle:hover)::before {
+  transform: translate(-50%, 0) scale(5);
+}
+
+.card .circle {
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    var(--bright-blue),
+    var(--cyan-color)
+  );
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .circle:hover {
+  background: transparent;
+}
+
+.circle span {
+  font-size: 30px;
+}
+
+.card h2 {
+  color: white;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.card p {
+  color: gainsboro;
+}
+
+.card .icons span {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.shape-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--bright-blue);
+  filter: brightness(0.5);
+}
+
+.shape-circle.top {
+  position: absolute;
+  top: -65%;
+  left: -70px;
+}
+
+.shape-circle.bottom {
+  position: absolute;
+  bottom: -35%;
+  right: 20px;
+  z-index: -1;
+}
