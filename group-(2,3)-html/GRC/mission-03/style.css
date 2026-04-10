@@ -1,0 +1,148 @@
+:root {
+  --Midnight-Blue: #0f172a;
+  --Deep-Purple: #1e1b4b;
+  --Castle-Light-Gray: #d1d5db;
+  --Castle-Dark-Gray: #6b7280;
+  --Window-Gold: #facc15;
+  --Moon-White: #f8fafc;
+  --Water-Blue: #1e3a8a;
+  --Flag-Red: #dc2626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--Midnight-Blue),
+    var(--Deep-Purple)
+  );
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  color: var(--Castle-Light-Gray);
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-color: var(--Deep-Purple);
+}
+
+.castle {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-height: 86vh;
+  gap: 40px;
+  width: fit-content;
+  margin: auto;
+}
+
+.castle-left {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: var(--Castle-Light-Gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.castle-left::before {
+  content: "";
+  width: 142px;
+  height: 142px;
+  background-color: var(--Castle-Dark-Gray);
+  position: absolute;
+  top: -72px;
+  left: 29px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.window {
+  width: 60px;
+  height: 80px;
+  background-color: var(--Window-Gold);
+  border-radius: 12px;
+  transition: 0.5s ease all;
+}
+
+.castle-middle {
+  width: 300px;
+  height: 410px;
+  background-color: var(--Castle-Light-Gray);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.castle-middle::before {
+  content: "";
+  width: 212px;
+  height: 212px;
+  background-color: var(--Castle-Dark-Gray);
+  position: absolute;
+  top: -106px;
+  left: 44px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.window-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 80px;
+}
+
+.door {
+  width: 85px;
+  border-radius: 100px 100px 0 0;
+  height: 110px;
+  background-color: var(--Castle-Dark-Gray);
+  position: absolute;
+  bottom: 0;
+}
+
+.moon {
+  width: 150px;
+  height: 150px;
+  background-color: var(--Moon-White);
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  /* make shadow for moon */
+  box-shadow: 0 0 20px 5px var(--Moon-White);
+}
+
+.flag {
+  transition: 0.5s ease all;
+  width: 65px;
+  height: 35px;
+  background-color: var(--Flag-Red);
+  position: absolute;
+  left: 50%;
+  top: 120px;
+}
+
+.castle:hover .window {
+  box-shadow: 0 0 20px 5px var(--Window-Gold);
+}
+
+.castle:hover .flag {
+  rotate: 15deg;
+}

@@ -1,0 +1,140 @@
+:root {
+  --monster-body: #8e44ad;
+  --eye-white: #ffffff;
+  --pupil: #000000;
+  --horns: #ff6f61;
+  --feet: #fdd835;
+  --arms: #6d4c41;
+  --eye-shine: #ffffff;
+  --background: #eceff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 650px;
+  padding: 100px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monster {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: var(--monster-body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.eye {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--eye-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pupil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--pupil);
+  position: relative;
+}
+
+.pupil::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--eye-shine);
+  /* display: inline-block;
+  margin-left: 12px;
+  margin-top: 12px; */
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
+.monster::before {
+  content: "";
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--arms);
+  position: absolute;
+  left: -75px;
+  rotate: -20deg;
+  top: 53%;
+}
+.monster::after {
+  content: "";
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--arms);
+  position: absolute;
+  right: -75px;
+  rotate: 20deg;
+  top: 53%;
+}
+
+.ear {
+  width: 65px;
+  height: 100px;
+  background-color: var(--horns);
+  position: absolute;
+  top: -53px;
+  left: 80px;
+  border-radius: 50px 50px 0 0;
+  rotate: -15deg;
+}
+
+.ear::after {
+  content: "";
+  width: 65px;
+  height: 100px;
+  background-color: var(--horns);
+  position: absolute;
+  top: 43px;
+  left: 170px;
+  border-radius: 50px 50px 0 0;
+  rotate: 30deg;
+}
+
+.feet {
+  width: 65px;
+  height: 30px;
+  background-color: var(--feet);
+  position: absolute;
+  bottom: -15px;
+  border-radius: 20px;
+  left: 115px;
+}
+
+.feet::after {
+  content: "";
+  width: 65px;
+  height: 30px;
+  background-color: var(--feet);
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+  left: 110px;
+}
