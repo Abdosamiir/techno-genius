@@ -1,0 +1,131 @@
+:root {
+  --bg-color: #3c8d3f;
+  --main-color: #14f078;
+  --dark-color: #1a1d2f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.shape {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
+  border-radius: 10px 10px 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.shape::before {
+  content: "";
+  width: 100%;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--dark-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.eye {
+  width: 40px;
+  height: 40px;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 50%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.mouth {
+  width: 80px;
+  height: 40px;
+  background-color: var(--dark-color);
+  border-radius: 0 0 100px 100px;
+  margin-top: 30px;
+}
+
+.shape::after {
+  content: "";
+  width: 35px;
+  height: 120px;
+  background-color: var(--dark-color);
+  position: absolute;
+  bottom: -80px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.ear-right {
+  width: 40px;
+  height: 15px;
+  background-color: var(--dark-color);
+  position: absolute;
+  right: -40px;
+  top: 45%;
+}
+.ear-left {
+  width: 40px;
+  height: 15px;
+  background-color: var(--dark-color);
+  position: absolute;
+  left: -40px;
+  top: 45%;
+}
+
+.ear-right::before {
+  border-radius: 20px;
+  content: "";
+  width: 15px;
+  height: 35px;
+  background-color: var(--dark-color);
+
+  position: absolute;
+  right: 0;
+  top: -65%;
+}
+
+.ear-left::before {
+  border-radius: 20px;
+  content: "";
+  width: 15px;
+  height: 35px;
+  background-color: var(--dark-color);
+
+  position: absolute;
+  left: 0;
+  top: -65%;
+}

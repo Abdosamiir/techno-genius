@@ -1,0 +1,147 @@
+:root {
+  --Midnight-Blue: #0f172a;
+  --Deep-Purple: #1e1b4b;
+  --Castle-Light-Gray: #d1d5db;
+  --Castle-Dark-Gray: #6b7280;
+  --Window-Gold: #facc15;
+  --Moon-White: #f8fafc;
+  --Water-Blue: #1e3a8a;
+  --Flag-Red: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--Midnight-Blue),
+    var(--Deep-Purple)
+  );
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  color: var(--Moon-White);
+  background-color: var(--Deep-Purple);
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.castle {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-height: 65vh;
+  gap: 40px;
+}
+
+.tower {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  background-color: var(--Castle-Light-Gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.tower::before {
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-color: var(--Castle-Dark-Gray);
+  position: absolute;
+  top: -54px;
+  left: 22px;
+  rotate: 45deg;
+  z-index: -1;
+}
+
+.window {
+  width: 30px;
+  height: 40px;
+  background-color: var(--Window-Gold);
+  border-radius: 8px;
+  transition: 0.5s ease all;
+}
+
+.middle-tower {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  background-color: var(--Castle-Light-Gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.middle-tower::before {
+  content: "";
+  width: 140px;
+  height: 140px;
+  background-color: var(--Castle-Dark-Gray);
+  position: absolute;
+  top: -70px;
+  left: 30px;
+  rotate: 45deg;
+  z-index: -1;
+}
+
+.windows-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.door {
+  width: 70px;
+  height: 90px;
+  background-color: var(--Castle-Dark-Gray);
+  position: absolute;
+  bottom: 0;
+  border-radius: 100px 100px 0 0;
+}
+
+.moon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--Moon-White);
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  box-shadow: 0 0 20px 5px var(--Moon-White);
+}
+
+.flag {
+  width: 70px;
+  height: 35px;
+  background-color: var(--Flag-Red);
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transition: 0.5s ease all;
+}
+
+.castle:hover .window {
+  box-shadow: 0 0 20px 5px var(--Window-Gold);
+}
+
+.castle:hover .flag {
+  rotate: 15deg;
+}
