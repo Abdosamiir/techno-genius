@@ -1,0 +1,231 @@
+:root {
+  --bg-color: #40c2f6;
+  --shape-color: #ffee00;
+  --wing-color: #ffb700;
+  --feet-color: #ff7300;
+}
+
+body {
+  background-color: #40c2f6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  animation: body-bob 0.75s ease-in-out infinite;
+}
+
+.shape {
+  position: relative;
+  width: 160px;
+  height: 90px;
+  background-color: var(--shape-color);
+  border-radius: 8px 0 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.face {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100px;
+  height: 55px;
+  background-color: var(--shape-color);
+  border-radius: 100px 100px 0 0;
+}
+
+.face::before {
+  content: "";
+  width: 12px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--shape-color);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: rotate(5deg);
+}
+.face::after {
+  content: "";
+  width: 12px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: var(--shape-color);
+  position: absolute;
+  top: -20px;
+  left: 40%;
+  transform: rotate(-13deg);
+}
+
+.eye {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 17px;
+  margin-bottom: 12px;
+  animation: close-eye 0.7s linear infinite alternate;
+}
+
+.shape::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--wing-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: 70%;
+}
+
+.wing {
+  width: 70px;
+  height: 40px;
+  background-color: var(--wing-color);
+  border-radius: 12px 12px 100px 100px;
+  margin-right: 50px;
+  transform: translate(-10px, -10px);
+  animation: fly 0.9s linear infinite alternate-reverse;
+}
+
+.nose {
+  border-left: 18px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid var(--feet-color);
+  transform: rotate(200deg);
+  position: absolute;
+  right: -18px;
+  z-index: -1;
+}
+
+.feet-shadow {
+  width: 120px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  align-self: center;
+  margin-top: 30px;
+  z-index: -2;
+  animation: shadow-bob 0.75s ease-in-out infinite;
+}
+
+.feet-right,
+.feet-left {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  background-color: var(--feet-color);
+  z-index: -1;
+  transform-origin: top center;
+}
+.feet-right::after,
+.feet-left::after {
+  content: "";
+  width: 40px;
+  height: 14px;
+  background-color: var(--feet-color);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.feet-right {
+  right: 40px;
+  top: 10px;
+  animation: leg-right 0.8s ease-in-out infinite alternate;
+}
+.feet-left {
+  left: 65px;
+  top: 20px;
+  animation: leg-left 0.8s ease-in-out infinite alternate;
+  animation-delay: -0.4s;
+}
+@keyframes close-eye {
+  to {
+    height: 0px;
+    transform: translate(0, -5px);
+  }
+}
+
+@keyframes fly {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes body-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shadow-bob {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(0.8);
+    opacity: 0.7;
+  }
+}
+
+@keyframes leg-right {
+  0% {
+    transform: rotate(-38deg) translateY(0);
+  }
+  25% {
+    transform: rotate(-22deg) translateY(-2px);
+  }
+  50% {
+    transform: rotate(-8deg) translateY(-4px);
+  }
+  75% {
+    transform: rotate(-24deg) translateY(-2px);
+  }
+  100% {
+    transform: rotate(-38deg) translateY(0);
+  }
+}
+
+@keyframes leg-left {
+  0% {
+    transform: rotate(28deg) translateY(0);
+  }
+  25% {
+    transform: rotate(12deg) translateY(-2px);
+  }
+  50% {
+    transform: rotate(-2deg) translateY(-4px);
+  }
+  75% {
+    transform: rotate(12deg) translateY(-2px);
+  }
+  100% {
+    transform: rotate(28deg) translateY(0);
+  }
+}
