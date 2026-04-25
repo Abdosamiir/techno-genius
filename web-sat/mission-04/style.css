@@ -1,0 +1,103 @@
+:root {
+  --bg-face: #f2dd68;
+  --eyes-mouth-color: #995710;
+  --teeth-color: #fffae6;
+  --tongue-color: #d8aa2b;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 30px;
+  width: 600px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face {
+  width: 270px;
+  height: 270px;
+  background-color: var(--bg-face);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset -18px -18px 0px rgba(0, 0, 0, 0.1);
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 105px;
+  margin-top: 50px;
+}
+
+.eye {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--eyes-mouth-color);
+  transition: all 0.5s ease;
+}
+
+.mouth {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  background-color: var(--eyes-mouth-color);
+  border-radius: 0 0 100px 100px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.mouth::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: var(--teeth-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mouth::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--tongue-color);
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.face:hover .eye {
+  animation: laugh 0.8s ease infinite;
+}
+
+@keyframes laugh {
+  0% {
+    height: 25px;
+  }
+  50% {
+    height: 2px;
+  }
+  100% {
+    height: 25px;
+  }
+}
