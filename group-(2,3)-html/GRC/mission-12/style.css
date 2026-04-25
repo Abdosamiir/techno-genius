@@ -5,11 +5,11 @@
 }
 
 body {
-  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: end;
   height: 100vh;
+  background-color: var(--bg-color);
   overflow: hidden;
 }
 
@@ -17,11 +17,12 @@ body {
   width: 100%;
   height: 200px;
   background-color: var(--bg-color);
-  /* background-color: red; */
   position: absolute;
-  bottom: -115px;
+  bottom: -100px;
   left: 0;
-  border-radius: 100% 100% 0 0;
+  /* border-radius: 100% 100% 0 0; */
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
 }
 
 .moon {
@@ -29,16 +30,15 @@ body {
   height: 400px;
   background-color: var(--moon-color);
   border-radius: 50%;
-  box-shadow:
-    0px 0px 1px 31px rgba(225, 255, 255, 0.252),
-    0px 0px 1px 65px #d9fffd24,
-    0px 0px 3px 100px #d9fffd0f;
-
   display: flex;
   justify-content: center;
   align-items: end;
+  box-shadow:
+    0 0 0 30px rgba(225, 255, 255, 0.252),
+    0 0 1px 65px #d9fffd24,
+    0 0 3px 100px #d9fffd0f;
   position: relative;
-  top: -50px;
+  top: -60px;
 }
 
 .rabbit {
@@ -47,18 +47,24 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -35px;
+  top: -40px;
 }
 
 .face {
+  position: relative;
+  top: 5px;
   width: 45px;
   height: 45px;
   background-color: #000;
   border-radius: 50%;
-  position: relative;
-  top: 5px;
 }
 
+.body {
+  width: 75px;
+  height: 55px;
+  background-color: #000;
+  border-radius: 44%;
+}
 .face::before {
   content: "";
   width: 10px;
@@ -83,20 +89,13 @@ body {
   rotate: 55deg;
 }
 
-.body {
-  width: 75px;
-  height: 55px;
-  background-color: #000;
-  border-radius: 44%;
-}
-
 .cloud {
-  width: 85%;
+  width: 71%;
   height: 300px;
   border-radius: 45%;
   background-color: var(--cloud-color);
   position: absolute;
-  top: 75%;
+  top: 78%;
   left: 50%;
   z-index: -1;
   transform: translate(-50%, -50%);
@@ -128,45 +127,47 @@ body {
 }
 
 .buble {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-color: var(--cloud-color);
   position: absolute;
 }
 
 .bubble-1 {
-  top: 40px;
-  right: 8px;
+  top: 30px;
+  right: 2px;
 }
 .bubble-2 {
-  top: -2px;
-  right: 81px;
+  top: -13px;
+  right: 107px;
 }
+
 .bubble-3 {
-  top: -25px;
-  right: 157px;
+  width: 150px;
+  height: 150px;
+  top: -40px;
+  right: 211px;
 }
 .bubble-4 {
-  top: -25px;
-  left: 157px;
+  top: 30px;
+  left: 2px;
 }
 .bubble-5 {
-  width: 70px;
-  height: 70px;
-  top: -12px;
-  left: 92px;
+  top: -13px;
+  left: 107px;
 }
+
 .bubble-6 {
-  height: 70px;
-  width: 70px;
-  top: 15px;
-  left: 33px;
+  width: 150px;
+  height: 150px;
+  top: -40px;
+  left: 211px;
 }
 
 .layer {
   position: absolute;
   inset: 0;
-  z-index: 2;
   box-shadow: inset -2px 10px 100px 70px var(--bg-color);
+  z-index: 99;
 }
