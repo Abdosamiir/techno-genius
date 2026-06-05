@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #28e9e1;
+  --secondary-color: #115a91;
+  --bracket-color: #4d4d4d;
+}
+
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shape {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: white;
+  border-radius: 25px;
+  border: 15px solid var(--primary-color);
+  box-shadow: 0 20px 0 0 var(--secondary-color);
+}
+
+.bracket {
+  position: relative;
+  width: 30px;
+  height: 140px;
+  background-color: var(--bracket-color);
+}
+
+.bracket-right::before {
+  content: "";
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  background-color: var(--bracket-color);
+  right: 4px;
+}
+
+.bracket-right::after {
+  content: "";
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bracket-color);
+  right: 4px;
+}
+
+.bracket-left::before {
+  content: "";
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  background-color: var(--bracket-color);
+  left: 4px;
+}
+.bracket-left::after {
+  content: "";
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bracket-color);
+  left: 4px;
+}
