@@ -1,0 +1,72 @@
+/* 
+Grid
+=> parent 
+- display : grid;
+- grid-template-columns => [number of cols ] => [px , % , fr = fraction (جزء) , auto ,  repeat()]
+fraction is greedy 
+auto is shy
+- grid-template-rows => [number of rows ] => [px , % , fr , auto , repeat() ]
+- gap: [row , cols]
+- justify-content
+- align-content
+- grid-template-areas
+
+=> child 
+- grid-area :[grid row start] [grid row end]  [grid col start] [grid col end]
+- grid-column : [grid col start] [grid col end]
+- grid-row : [grid row start] [grid row end]
+
+*/
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 1fr 50px;
+  /* gap: 10px 55px; */
+  /* justify-content: space-between;
+  align-content: space-between; */
+
+  grid-template-areas:
+    "logo header header header"
+    "aside content content content"
+    "footer footer footer footer";
+}
+
+ .child.logo {
+  grid-area: logo;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+} 
+
+.child.header {
+  grid-area: header;
+  background-color: green;
+  color: white;
+  padding: 20px;
+}
+
+.child.aside {
+  grid-area: aside;
+  background-color: red;
+  color: white;
+  padding: 20px;
+}
+
+.child.content {
+  grid-area: content;
+  background-color: orange;
+  color: white;
+  padding: 20px;
+}
+
+.child.footer {
+  grid-area: footer;
+  background-color: purple;
+  color: white;
+  padding: 20px;
+}
