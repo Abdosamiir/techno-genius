@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="user">user</label>
+        <input
+          type="text"
+          required
+          name="username"
+          id="user"
+          placeholder="please enter your name"
+        />
+      </div>
+
+      <div>
+        <label for="pass">password</label>
+        <input
+          type="password"
+          required
+          name="pass"
+          id="pass"
+          placeholder="enter your password"
+          maxlength="10"
+          minlength="3"
+        />
+      </div>
+
+      <div>
+        <label for="tel">enter your phone</label>
+        <input type="tel" name="tel" id="tel" placeholder="enter your phone" />
+      </div>
+
+      <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <input
+          type="range"
+          id="vol"
+          name="vol"
+          min="100"
+          max="500"
+          value="400"
+        />
+      </div>
+
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
