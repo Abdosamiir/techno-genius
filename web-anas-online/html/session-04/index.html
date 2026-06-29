@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- input-text -->
+      <div>
+        <label for="username">username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="enter your name"
+          autofocus
+          required
+          maxlength="30"
+          minlength="3"
+        />
+      </div>
+      <br />
+      <!-- input-password -->
+      <div>
+        <label for="password">password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="********"
+          maxlength="10"
+          minlength="5"
+        />
+      </div>
+      <br />
+      <!-- input - email -->
+      <div>
+        <label for="email">email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="enter your email"
+        />
+      </div>
+      <br />
+      <!-- input date -->
+      <input type="date" />
+      <input type="month" />
+      <input type="week" />
+
+      <br />
+      <div>
+        <input type="number" min="0" max="10" />
+        <input type="range" value="100" max="100" />
+      </div>
+
+      <div>
+        <input type="color" name="" id="" />
+      </div>
+      <br />
+      <!-- input-submit -->
+      <div>
+        <!-- <input type="submit" value="login" /> -->
+        <button type="submit">login</button>
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
