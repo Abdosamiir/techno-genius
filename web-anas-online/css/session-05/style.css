@@ -1,0 +1,47 @@
+/* this is a css comment */
+/* syntax => selector { key/property : value ; } */
+/* tagName , class , id is selector */
+/*  best practice for naming in css is kabab case => (text-example) */
+
+/* class */
+.text-class {
+  color: red;
+  text-align: center;
+}
+
+/* id */
+#text-id {
+  color: cadetblue;
+}
+
+.text-red {
+  /* HEX color = hex code  */
+  color: orangered;
+  /* background-color: darkcyan; */
+  text-align: center;
+  /* shorthand */
+  margin: 20px;
+  border: 3px solid orangered;
+  padding: 10px;
+
+  /* border-width: 3px;
+  border-style: double;
+  border-color:orangered; */
+
+  /* margin vs padding */
+}
+
+.text-yellow {
+  /* override */
+  /* RGB = > red green blue  */
+  color: rgb(0, 0, 255);
+}
+
+/*
+priority => الاهميه 
+
+1. !important
+2. inline style
+3. id
+4. class
+*/
