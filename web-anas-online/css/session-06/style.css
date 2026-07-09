@@ -1,0 +1,56 @@
+.box {
+  width: 200px;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
+
+.one {
+  background-color: rgb(218, 19, 218);
+}
+.two {
+  background-color: rgba(218, 19, 218, 0.501);
+}
+.three {
+  background-color: rgba(218, 19, 218, 0.138);
+}
+
+.shape {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background-image: url(photo.png);
+  background-repeat: no-repeat;
+  background-color: #eee;
+  margin-bottom: 15px;
+}
+.shape-2 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background-image: url(photo.png);
+  /* background-repeat: repeat-y; 
+  background-position: top;
+  background-size: 80%;
+  
+  */
+  background-color: #eee;
+}
+
+.text {
+  /* center the element  */
+  padding: 20px;
+  margin: 40px auto;
+  border: 1px solid black;
+  /* outline: 5px solid red; */
+  width: 300px;
+  color: red;
+  text-align: center;
+  /* text-decoration: overline blue wavy; */
+  text-transform: lowercase;
+
+  /* letter-spacing: 10px; */
+  line-height: 1.6;
+
+  text-shadow: 0 0 0 0;
+}
