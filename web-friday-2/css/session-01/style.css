@@ -1,0 +1,18 @@
+/* this is comment  */
+div {
+  color: blue;
+  font-size: 30px;
+}
+
+.test {
+  color: white;
+  background-color: darkcyan;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  border: 15px dotted orangered;
+}
+
+#test {
+  /* color: aqua; */
+}
