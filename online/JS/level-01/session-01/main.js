@@ -1,20 +1,45 @@
-// this is a comment
+console.log("test");
 
-/* this is multi-line comment */
+// old way of declaration
+var x = 5;
 
-/* data type
-1. string 
-2. number
-3. boolean => true or false 
-4. object
-5. undefind
-6. null
+var fristName = "mohamed";
+var lastName = " moataz";
+console.log(fristName + "  " + lastName);
+
+// data types
+
+/*
+string => "text"
+number => 5 6 7 
+boolean => true || false 
+undefined
+null
+object [array is object in js]
 */
-// javascript run line by line 
-// syntax
-var hisName = "mohamed"; // string
-var x = 1; // number
-var bool = true; // boolean 
 
-console.log(x);
-console.log(hisName);
+// console.log(typeof []);
+
+// console.log(typeof x, typeof yourName);
+// can reassign
+let y = 3;
+y = 7;
+
+console.log(y);
+
+// constant => ثابت
+const z = 9;
+// z = 8; can't reassign
+// console.log(z < x);
+
+console.log(5 == "5"); // compare just a value
+console.log(5 === "5"); // false ? compare value and type
+
+// if statment
+if (fristName == "mohamed") {
+  // console.log("you are right my name is " + fristName);
+  // template litral => `` ذ
+  console.log(`you are right my name is ${fristName}`);
+} else {
+  console.log("wrong??");
+}
