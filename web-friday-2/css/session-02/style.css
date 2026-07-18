@@ -1,0 +1,41 @@
+.test {
+  color: red;
+  /* background-color: blue; */
+  width: 400px;
+  /* height: 200px; */
+  border: 1px solid orangered;
+  /* outline: 20px solid black; */
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  /* text-decoration: underline black; */
+  text-transform: lowercase;
+  /* letter-spacing: 10px; */
+  /* word-spacing: 1px; */
+  /* line-height: 1.6; */
+  text-shadow: 12px 4px 7px orangered;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+  background-image: url(cabin-003.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  border: 3px solid red;
+}
+
+.parent {
+  width: 500px;
+  height: 100px;
+  margin-top: 20px;
+  border: 2px solid blue;
+  padding: 40px;
+}
+
+.child {
+  text-align: center;
+  border: inherit;
+  padding: inherit;
+}
