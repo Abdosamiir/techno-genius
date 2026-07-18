@@ -1,0 +1,19 @@
+h2 {
+  background-color: orangered;
+}
+
+/* this is a comment */
+
+/* class */
+.heading {
+  color: tomato;
+  background-color: #fff;
+  border: 5px solid blue;
+  padding: 10px;
+  width: fit-content;
+}
+
+/* id */
+/* #test {
+  color: yellow;
+} */
